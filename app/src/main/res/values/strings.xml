@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">AmiVerse</string>
+
+    <string name="amity_logo">Amity</string>
+    <string name="home">Home</string>
+    <string name="amiverse">AmiVerse</string>
+
+    <string name="quick_link">Quick Links</string>
+    <string name="amity_web"><a href="https://www.amity.edu/">Amity University Website</a></string>
+
+    <string name="placement"><a href="https://www.amity.edu/placement/placement-record.asp">Amity University Placements</a></string>
+    <string name="dist_learn"><a href="http://addoe.amity.edu/">Amity Distance Learnings Programmes</a></string>
+    <string name="prog_web"><a href="https://www.amity.edu/programe-list.aspx?fd=all">Amity University Courses</a></string>
+
+    <string name="carrier"><a href="http://alumni.amity.edu/jobs.aspx">Careers in Amity University</a></string>
+
+    <string name="admis"><a href="https://www.amity.edu/admission-procedure-domestic.aspx">Amity University Admission Procedure</a></string>
+    <string name="event">Upcoming Events</string>
+    <string name="acc"><a href="https://acc.amityaump.com/">Amity Coding Club</a></string>
+    <string name="virtual360"><a href="https://www.google.co.in/maps/place/Amity+University+Gwalior/@26.2729206,78.2292078,2a,75y,105.15h,90t/data=!3m6!1e1!3m4!1sYISDbuM5MdCTxAeqeEG_PA!2e0!7i13312!8i6656!4m7!3m6!1s0x3976c0e647bece07:0xd848338a0d6a5393!8m2!3d26.2727152!4d78.2283897!14m1!1BCgIgARICCAI?hl=en">Amity 360 Virtual Tour</a></string>
+
+    <string name="upcoming_events">Upcoming Events</string>
+
+    <string name="amity_sangathan"><a href="https://www.amity.edu/infra-play-sangathan.aspx">Amity University Sangathan</a></string>
+    <string name="amichroma"><a href="https://amityaump.com/">Amichroma</a></string>
+    <string name="mediafest"><a href="http://addoe.amity.edu/">Media Fest 2020</a></string>
+    <string name="conference"><a href="https://amity.edu/gwalior/event-detail-normal.aspx?Event=10023">Conference</a></string>
+
+    <string name="sangathan"><a href="https://www.amity.edu/gwalior/photo-gallery">sangathan</a></string>
+    <string name="Amichroma"><a href="https://www.amity.edu/gwalior/photo-gallery">AmiChroma</a></string>
+    <string name="Raising_day"><a href="https://www.amity.edu/gwalior/photo-gallery">Raising Day</a></string>
+    <string name="Click_o_mania"><a href="https://www.amity.edu/gwalior/photo-gallery">Click o Mania</a></string>
+    <string name="aump_clubs">AUMP CLUBS</string>
+    <string name="amity_coding_club">AMITY CODING CLUB</string>
+    <string name="upgrade_your_technical_skills">Upgrade your technical skills.</string>
+    <string name="eco_club">ECO CLUB</string>
+    <string name="participate_in_eco_drives_and_enrich_environment_knowledge">Participate in eco drives and enrich environment knowledge</string>
+    <string name="literature_club">LITERATURE CLUB</string>
+    <string name="enhance_explore_and_express_the_love_for_literature">Enhance,Explore and Express the love for literature</string>
+    <string name="e_forms">E FORMS</string>
+    <string name="coding_competition">Coding Competition</string>
+    <string name="date_1_june_2020">Date:1 June 2020</string>
+    <string name="android_development_webinar">Android Development Webinar</string>
+    <string name="organiser_mr_dinesh_sharma">Organiser:Mr.Dinesh Sharma</string>
+    <string name="department_aset_cse">Department:ASET(CSE)</string>
+    <string name="date_24_may_2020">Date:24 May 2020</string>
+    <string name="go_for_registration">Go for Registration</string>
+    <string name="events">Events</string>
+    <string name="gallery">gallery</string>
+    <string name="welcome_to_amiverse">Welcome to AmiVerse</string>
+    <string name="todo">TODO</string>
+    <string name="amigallery">AmiGallery</string>
+    <string name="share">Share</string>
+    <string name="menu">Menu</string>
+    <string name="menubar">menuBar</string>
+    <string name="amihome">AmiHome</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+</resources>

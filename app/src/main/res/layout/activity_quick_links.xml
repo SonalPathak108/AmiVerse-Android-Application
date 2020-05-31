@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Quick_links"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:paddingEnd="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="108dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/official_logo"
+            android:contentDescription="@string/amity_logo" />
+
+        <TextView
+            android:id="@+id/amity_quick_link"
+            android:layout_width="match_parent"
+            android:paddingTop="15dp"
+            android:paddingStart="5dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="20dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/quick_link"
+            android:textColorHighlight="@color/colorAccent"
+            android:textColor="@color/colorBack"
+            android:textSize="28sp"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <TableRow
+
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"
+
+        />
+
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:fillViewport="false"
+         >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_margin="5dp"
+                 tools:ignore="UseCompoundDrawables">
+
+                 <ImageView
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:src="@drawable/ic_website"
+                     android:contentDescription="@string/app_name" />
+
+         <TextView
+             android:id="@+id/amity_web"
+             android:padding="5dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/amity_web"
+             android:textColor="@color/black"
+             android:textSize="20sp"
+             android:textStyle="normal"
+             android:layout_marginStart="5dp"
+             android:layout_marginLeft="5dp" />
+             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_placement"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+             android:id="@+id/amity_placement"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+             android:text="@string/placement"
+             android:textColor="@color/black"
+             android:textSize="20sp"
+             android:textStyle="normal"
+             />
+            </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_margin="5dp"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              tools:ignore="UseCompoundDrawables">
+              <ImageView
+                  android:layout_width="50dp"
+                  android:layout_height="50dp"
+                  android:src="@drawable/ic_distance_learning"
+                  android:contentDescription="@string/app_name" />
+
+
+              <TextView
+                 android:id="@+id/amity_dist_learn"
+                 android:layout_width="wrap_content"
+                  android:layout_marginStart="5dp"
+                  android:layout_marginLeft="5dp"
+                 android:layout_height="wrap_content"
+                 android:text="@string/dist_learn"
+                 android:padding="5dp"
+                 android:textColor="@color/black"
+                 android:textSize="20sp"
+                 android:textStyle="normal"
+                 />
+
+          </LinearLayout>
+
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_margin="5dp"
+               tools:ignore="UseCompoundDrawables">
+               <ImageView
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:src="@drawable/ic_courses"
+                   android:contentDescription="@string/app_name" />
+
+
+               <TextView
+                 android:id="@+id/programs"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:padding="5dp"
+                 android:layout_marginStart="5dp"
+                 android:layout_marginLeft="5dp"
+                 android:text="@string/prog_web"
+                 android:textColor="@color/black"
+                 android:textSize="20sp"
+                 android:textStyle="normal"
+                 />
+           </LinearLayout>
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_margin="5dp"
+              tools:ignore="UseCompoundDrawables">
+             <ImageView
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:src="@drawable/ic_admission"
+                 android:contentDescription="@string/app_name" />
+
+             <TextView
+                 android:id="@+id/admission"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/admis"
+                 android:padding="5dp"
+                 android:layout_marginStart="5dp"
+                 android:layout_marginLeft="5dp"
+                 android:textColor="@color/black"
+                 android:textSize="20sp"
+
+                 android:textStyle="normal"
+                 />
+          </LinearLayout>
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_margin="5dp"
+                 tools:ignore="UseCompoundDrawables">
+             <ImageView
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:src="@drawable/ic_tour"
+                 android:contentDescription="@string/app_name" />
+
+             <TextView
+                 android:id="@+id/virtual360"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:padding="5dp"
+                 android:layout_marginStart="5dp"
+                 android:layout_marginLeft="5dp"
+                 android:text="@string/virtual360"
+                 android:textColor="@color/black"
+                 android:textSize="20sp"
+
+                 android:textStyle="normal"
+                 />
+             </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                tools:ignore="UseCompoundDrawables">
+             <ImageView
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:src="@drawable/ic_coding_club"
+                 android:contentDescription="@string/app_name" />
+
+             <TextView
+                 android:id="@+id/acc"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:padding="5dp"
+                 android:text="@string/acc"
+                 android:textColor="@color/black"
+                 android:textSize="20sp"
+                 android:layout_marginStart="5dp"
+                 android:layout_marginLeft="5dp"
+
+                 android:textStyle="normal"
+                 />
+
+
+            </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_margin="5dp"
+                 tools:ignore="UseCompoundDrawables">
+             <ImageView
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:src="@drawable/ic_carrier"
+                 android:contentDescription="@string/app_name" />
+
+             <TextView
+                 android:id="@+id/carrier"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:padding="5dp"
+                 android:text="@string/carrier"
+                 android:textColor="@color/black"
+                 android:textSize="20sp"
+                 android:layout_marginStart="5dp"
+                 android:layout_marginLeft="5dp"
+
+                 android:textStyle="normal"
+                 />
+
+             </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+         </LinearLayout>
+     </ScrollView>
+
+
+
+</LinearLayout>
+

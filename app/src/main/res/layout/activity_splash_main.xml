@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBack"
+    tools:context=".SplashMain">
+
+    <ImageView
+        android:id="@+id/official_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/official_logo"
+        android:contentDescription="@string/amity_logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_amiverse"
+        android:layout_below="@+id/official_logo"
+        android:textColor="#1212F3"
+        android:textSize="25sp"
+        android:gravity="center"
+
+        />
+</RelativeLayout>
