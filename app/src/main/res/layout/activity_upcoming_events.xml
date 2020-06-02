@@ -12,7 +12,6 @@
         android:id="@+id/toolbar"
         />
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -59,12 +58,19 @@
 
         />
 
-    <CalendarView
-        android:id="@+id/calander"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="208dp"
+        android:fillViewport="false">
+
+        <CalendarView
+            android:id="@+id/calander"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp" />
+    </ScrollView>
 
     <ScrollView
         android:layout_width="match_parent"

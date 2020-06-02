@@ -7,7 +7,6 @@
 
     <string name="quick_link">Quick Links</string>
     <string name="amity_web"><a href="https://www.amity.edu/">Amity University Website</a></string>
-
     <string name="placement"><a href="https://www.amity.edu/placement/placement-record.asp">Amity University Placements</a></string>
     <string name="dist_learn"><a href="http://addoe.amity.edu/">Amity Distance Learnings Programmes</a></string>
     <string name="prog_web"><a href="https://www.amity.edu/programe-list.aspx?fd=all">Amity University Courses</a></string>
@@ -26,18 +25,18 @@
     <string name="mediafest"><a href="http://addoe.amity.edu/">Media Fest 2020</a></string>
     <string name="conference"><a href="https://amity.edu/gwalior/event-detail-normal.aspx?Event=10023">Conference</a></string>
 
-    <string name="sangathan"><a href="https://www.amity.edu/gwalior/photo-gallery">sangathan</a></string>
+    <string name="sangathan"><a href="https://www.amity.edu/gwalior/photo-gallery">Sangathan</a></string>
     <string name="Amichroma"><a href="https://www.amity.edu/gwalior/photo-gallery">AmiChroma</a></string>
     <string name="Raising_day"><a href="https://www.amity.edu/gwalior/photo-gallery">Raising Day</a></string>
     <string name="Click_o_mania"><a href="https://www.amity.edu/gwalior/photo-gallery">Click o Mania</a></string>
-    <string name="aump_clubs">AUMP CLUBS</string>
+    <string name="aump_clubs">AUMP Clubs</string>
     <string name="amity_coding_club">AMITY CODING CLUB</string>
     <string name="upgrade_your_technical_skills">Upgrade your technical skills.</string>
-    <string name="eco_club">ECO CLUB</string>
+    <string name="eco_club">Eco Club</string>
     <string name="participate_in_eco_drives_and_enrich_environment_knowledge">Participate in eco drives and enrich environment knowledge</string>
-    <string name="literature_club">LITERATURE CLUB</string>
+    <string name="literature_club">Literature Club</string>
     <string name="enhance_explore_and_express_the_love_for_literature">Enhance,Explore and Express the love for literature</string>
-    <string name="e_forms">E FORMS</string>
+    <string name="e_forms">E Forms</string>
     <string name="coding_competition">Coding Competition</string>
     <string name="date_1_june_2020">Date:1 June 2020</string>
     <string name="android_development_webinar">Android Development Webinar</string>
@@ -46,7 +45,8 @@
     <string name="date_24_may_2020">Date:24 May 2020</string>
     <string name="go_for_registration">Go for Registration</string>
     <string name="events">Events</string>
-    <string name="gallery">gallery</string>
+    <string name="register_button">Register</string>
+    <string name="gallery">Gallery</string>
     <string name="welcome_to_amiverse">Welcome to AmiVerse</string>
     <string name="todo">TODO</string>
     <string name="amigallery">AmiGallery</string>
