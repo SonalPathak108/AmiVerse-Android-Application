@@ -28,7 +28,7 @@ public class SplashMain extends AppCompatActivity {
             public void run() {
                     try {
                         sleep(3000);
-                        Intent i = new Intent(SplashMain.this, HomeMain.class);
+                        Intent i = new Intent(SplashMain.this, LoginActivity.class);
                         startActivity(i);
 
                     } catch (InterruptedException e) {

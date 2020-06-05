@@ -16,6 +16,8 @@
         <activity android:name=".club_activity" />
         <activity android:name=".eFormsMain" />
         <activity android:name=".Upcoming_events" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegistrationActivity" />
         <activity android:name=".HomeMain" />
         <activity android:name=".Quick_links" />
         <activity android:name=".SplashMain">
