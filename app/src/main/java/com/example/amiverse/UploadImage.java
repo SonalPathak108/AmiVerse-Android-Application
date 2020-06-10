@@ -86,7 +86,7 @@ public class UploadImage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                StringRequest request = new StringRequest(Request.Method.POST, "http:/192.168.1.4/uploadImage.php"
+                StringRequest request = new StringRequest(Request.Method.POST, "https://ep4.virtualmist.com/amiverse/uploadImage.php"
                         , new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
