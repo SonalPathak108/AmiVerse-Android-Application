@@ -67,4 +67,9 @@
     <string name="menu_slideshow">Slideshow</string>
 
     <string name="home_second">Home Second</string>
+    <string name="contact">Contact Hierarchy</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="message">Message</string>
+
 </resources>
