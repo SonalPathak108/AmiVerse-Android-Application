@@ -20,7 +20,7 @@ import androidx.cardview.widget.CardView;
 public class HomeMain extends AppCompatActivity {
 
     GridLayout mainGrid;
-    ImageView quicklink,events,eforms,aumpclub,gallery,contact_hierarchy;
+    ImageView quicklink,events,eforms,aumpclub,gallery,leadership;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,7 @@ public class HomeMain extends AppCompatActivity {
         eforms = (ImageView) findViewById(R.id.h_eforms);
         aumpclub = (ImageView) findViewById(R.id.h_clubs);
         gallery = (ImageView) findViewById(R.id.h_gallery);
-        contact_hierarchy = (ImageView) findViewById(R.id.h_contact_hierarchy);
+        leadership = (ImageView) findViewById(R.id.h_contact_hierarchy);
 
         quicklink.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,11 +76,11 @@ public class HomeMain extends AppCompatActivity {
                }
            });
 
-        contact_hierarchy.setOnClickListener(new View.OnClickListener() {
+        leadership.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent cont_hie= new Intent(v.getContext(),Contact_Activity.class);
-                startActivity(cont_hie);
+                Intent leader_ship= new Intent(v.getContext(),Leadership_Activity.class);
+                startActivity(leader_ship);
             }
         });
     }

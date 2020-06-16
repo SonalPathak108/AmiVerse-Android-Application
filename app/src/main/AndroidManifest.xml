@@ -22,7 +22,7 @@
         <activity android:name=".RegistrationActivity" />
         <activity android:name=".HomeMain" />
         <activity android:name=".Quick_links" />
-        <activity android:name=".Contact_Activity" />
+        <activity android:name=".Leadership_Activity" />
 
         <activity android:name=".SplashMain">
             <intent-filter>
