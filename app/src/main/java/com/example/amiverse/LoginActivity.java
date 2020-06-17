@@ -61,8 +61,10 @@ public class LoginActivity extends AppCompatActivity {
                 public void onResponse(String response) {
                     progressDialog.dismiss();
 
-                    if(response.equalsIgnoreCase("logged in successfully")){
-
+                    if(response.equalsIgnoreCase("logged in successfully"))
+                    {
+                        User user = new User(LoginActivity.this);
+                        user.setName(str_email);
                         ed_email.setText("");
                         ed_password.setText("");
                         startActivity(new Intent(getApplicationContext(),HomeMain.class));
