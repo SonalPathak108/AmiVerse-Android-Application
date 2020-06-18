@@ -6,19 +6,18 @@
     android:fitsSystemWindows="true"
     android:orientation="vertical">
 
-<androidx.appcompat.widget.Toolbar
-    android:id="@+id/myToolbar"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/navyblue"
-    app:titleTextColor="@android:color/white"
-    app:title="@string/app_name"
-    app:popupTheme="@style/AppTheme.PopupOverlay"
-    android:minHeight="?attr/actionBarSize"
-    android:fitsSystemWindows="true"
-    app:menu="@menu/resource_menu"
-    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/navyblue"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        app:menu="@menu/resource_menu"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="@string/app_name"
+        app:titleTextColor="@android:color/white">
 
-</androidx.appcompat.widget.Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 
 </LinearLayout>

@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".HomeMain"
-    android:orientation="vertical">
-    <include
-        layout="@layout/toolbar"
-        android:id="@+id/toolbar"
-        />
+    android:orientation="vertical"
+    tools:context=".CampusTour">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:title="AmiVerse">
 
-
+    </androidx.appcompat.widget.Toolbar>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="128dp"
         android:layout_margin="10dp"
         android:orientation="horizontal"
         android:paddingStart="20dp"
@@ -26,10 +27,11 @@
         tools:ignore="UseCompoundDrawables">
 
         <ImageView
-            android:layout_width="108dp"
+            android:id="@+id/Tour"
+            android:layout_width="107dp"
             android:layout_height="match_parent"
-            android:src="@drawable/official_logo"
-            android:contentDescription="@string/amity_logo" />
+            android:src="@drawable/tour"
+             />
 
         <TextView
             android:id="@+id/amity_quick_link"
@@ -42,9 +44,7 @@
             android:layout_margin="10dp"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
-            android:text="@string/amihome"
-            android:textColorHighlight="@color/colorAccent"
-            android:textColor="@color/colorBack"
+            android:text="360 Campus Tour"
             android:textSize="28sp"
             android:fontFamily="sans-serif-black"
             android:textStyle="bold"
@@ -57,29 +57,45 @@
         android:layout_height="2dp"
         android:background="@color/colorPrimary"
         />
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context="edmt.dev.androidgridlayout.MainActivity">
 
+
+
         <LinearLayout
             android:orientation="vertical"
             android:weightSum="10"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:id="@+id/textGrid"
+                    android:text="GRID LAYOUT"
+                    android:textSize="34sp"
+                    android:textColor="@android:color/white"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
 
             <GridLayout
                 android:id="@+id/mainGrid"
                 android:layout_width="match_parent"
-                android:layout_height="640dp"
+                android:layout_height="500dp"
                 android:layout_weight="8"
                 android:alignmentMode="alignMargins"
                 android:columnCount="2"
                 android:columnOrderPreserved="false"
                 android:padding="14dp"
-                android:rowCount="3"
-                tools:ignore="InefficientWeight,UselessParent">
+                android:rowCount="3">
 
 
                 <!-- Row 1 -->
@@ -94,32 +110,31 @@
                     android:layout_marginRight="16dp"
                     android:layout_marginBottom="16dp"
                     app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp"
-                    tools:targetApi="lollipop">
+                    app:cardElevation="8dp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="120dp"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|center_vertical"
                         android:layout_margin="16dp"
-                        android:orientation="vertical"
-                        tools:ignore="UseCompoundDrawables">
+                        android:orientation="vertical">
 
                         <ImageView
-
-                            android:id="@+id/h_quick_link"
+                            android:id="@+id/lab"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
+                            android:src="@drawable/laboratory"
                             android:layout_gravity="center_horizontal"
-                            android:src="@drawable/quicklinks"
-                            android:contentDescription="@string/quick_link" />
+
+                            />
 
                         <TextView
+                            android:id="@+id/laboratry"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/quick_link"
+                            android:text="Laboratry"
                             android:textColor="@android:color/black"
-                            android:textSize="15sp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -136,31 +151,30 @@
                     android:layout_marginRight="16dp"
                     android:layout_marginBottom="16dp"
                     app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp"
-                    tools:targetApi="lollipop">
+                    app:cardElevation="8dp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|center_vertical"
                         android:layout_margin="16dp"
-                        android:orientation="vertical"
-                        tools:ignore="UseCompoundDrawables">
+                        android:orientation="vertical">
 
                         <ImageView
-                            android:id="@+id/h_events"
-                            android:layout_width="97dp"
-                            android:layout_height="88dp"
+                            android:id="@+id/campusimg"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
                             android:layout_gravity="center_horizontal"
-                            android:contentDescription="@string/upcoming_events"
-                            android:src="@drawable/upcoming_events" />
+                            android:src="@drawable/campuswalk" />
 
                         <TextView
+                            android:id="@+id/campus"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/events"
+                            android:text="Campus Walk"
                             android:textColor="@android:color/black"
-                            android:textSize="15sp"
+                            android:textSize="20sp"
+
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -180,31 +194,29 @@
                     android:layout_marginRight="16dp"
                     android:layout_marginBottom="16dp"
                     app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp"
-                    tools:targetApi="lollipop">
+                    app:cardElevation="8dp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|center_vertical"
                         android:layout_margin="16dp"
-                        android:orientation="vertical"
-                        tools:ignore="UseCompoundDrawables">
+                        android:orientation="vertical">
 
                         <ImageView
-                            android:id="@+id/h_eforms"
+                            android:id="@+id/cafe"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:layout_gravity="center_horizontal"
-                            android:src="@drawable/eforms"
-                            android:contentDescription="@string/e_forms" />
+                            android:src="@drawable/cafe" />
 
                         <TextView
+                            android:id="@+id/cafeteria"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/e_forms"
+                            android:text="Cafeteria"
                             android:textColor="@android:color/black"
-                            android:textSize="15sp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -221,31 +233,29 @@
                     android:layout_marginRight="16dp"
                     android:layout_marginBottom="16dp"
                     app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp"
-                    tools:targetApi="lollipop">
+                    app:cardElevation="8dp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|center_vertical"
                         android:layout_margin="16dp"
-                        android:orientation="vertical"
-                        tools:ignore="UseCompoundDrawables">
+                        android:orientation="vertical">
 
                         <ImageView
-                            android:id="@+id/h_clubs"
+                            android:id="@+id/hostal"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:layout_gravity="center_horizontal"
-                            android:src="@drawable/clubs"
-                            android:contentDescription="@string/aump_clubs" />
+                            android:src="@drawable/hostal" />
 
                         <TextView
+                            android:id="@+id/Hostal"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/aump_clubs"
+                            android:text="Hostal"
                             android:textColor="@android:color/black"
-                            android:textSize="15sp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -265,120 +275,47 @@
                     android:layout_marginRight="16dp"
                     android:layout_marginBottom="16dp"
                     app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp"
-                    tools:targetApi="lollipop">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="120dp"
-                        android:layout_gravity="center_horizontal|center_vertical"
-                        android:layout_margin="16dp"
-                        android:orientation="vertical"
-                        tools:ignore="UseCompoundDrawables">
-
-                        <ImageView
-                            android:id="@+id/h_gallery"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:layout_gravity="center_horizontal"
-                            android:contentDescription="@string/gallery"
-                            android:src="@drawable/photogallery" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/gallery"
-                            android:textColor="@android:color/black"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginBottom="16dp"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp"
-                    tools:targetApi="lollipop">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="120dp"
-                        android:layout_gravity="center_horizontal|center_vertical"
-                        android:layout_margin="16dp"
-                        android:orientation="vertical"
-                        tools:ignore="UseCompoundDrawables">
-
-                        <ImageView
-                            android:id="@+id/h_contact_hierarchy"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:layout_gravity="center_horizontal"
-                            android:contentDescription="@string/gallery"
-                            android:src="@drawable/h_contact_hierarchy" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/leadership"
-                            android:textColor="@android:color/black"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginBottom="16dp"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp"
-                    tools:targetApi="lollipop">
+                    app:cardElevation="8dp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|center_vertical"
                         android:layout_margin="16dp"
-                        android:orientation="vertical"
-                        tools:ignore="UseCompoundDrawables">
+                        android:orientation="vertical">
 
                         <ImageView
-                            android:id="@+id/h_campustour"
-                            android:layout_width="90dp"
-                            android:layout_height="86dp"
+                            android:id="@+id/sport"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
                             android:layout_gravity="center_horizontal"
-                            android:contentDescription="@string/aump_clubs"
-                            android:src="@drawable/ic_tour" />
+                            android:src="@drawable/sport" />
 
                         <TextView
+                            android:id="@+id/Sport"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="360 Campus Tour"
+                            android:text="Sports"
                             android:textColor="@android:color/black"
-                            android:textSize="15sp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
+
 
 
             </GridLayout>
-</LinearLayout>
+            <Button
+                android:id="@+id/campustour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Campus 360 Tour"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:background="@drawable/button"
+                />
+        </LinearLayout>
     </ScrollView>
-</LinearLayout>
+        </LinearLayout>

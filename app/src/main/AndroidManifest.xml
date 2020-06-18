@@ -23,6 +23,8 @@
         <activity android:name=".HomeMain" />
         <activity android:name=".Quick_links" />
         <activity android:name=".Leadership_Activity" />
+        <activity android:name=".CampusTour" />
+
 
         <activity android:name=".SplashMain">
             <intent-filter>

@@ -20,7 +20,7 @@ import androidx.cardview.widget.CardView;
 public class HomeMain extends AppCompatActivity {
 
     GridLayout mainGrid;
-    ImageView quicklink,events,eforms,aumpclub,gallery,leadership;
+    ImageView quicklink,events,eforms,aumpclub,gallery,leadership,campustour;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +35,8 @@ public class HomeMain extends AppCompatActivity {
         aumpclub = (ImageView) findViewById(R.id.h_clubs);
         gallery = (ImageView) findViewById(R.id.h_gallery);
         leadership = (ImageView) findViewById(R.id.h_contact_hierarchy);
+        campustour =(ImageView) findViewById(R.id.h_campustour);
+
 
         quicklink.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,6 +85,15 @@ public class HomeMain extends AppCompatActivity {
                 startActivity(leader_ship);
             }
         });
+
+        campustour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent campus_tour= new Intent(v.getContext(),CampusTour.class);
+                startActivity(campus_tour);
+            }
+        });
+
     }
 
 
