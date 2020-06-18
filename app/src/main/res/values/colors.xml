@@ -10,4 +10,6 @@
     <color name="navyblue">#000080</color>
     <color name="wafer">#abb9ff </color>
     <color name="icepack"> #c7ecee</color>
+    <color name="grey">#D3D3D3</color>
+    <color name="yellow">#CCCC00</color>
 </resources>

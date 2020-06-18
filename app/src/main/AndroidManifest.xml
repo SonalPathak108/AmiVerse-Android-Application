@@ -24,6 +24,7 @@
         <activity android:name=".Quick_links" />
         <activity android:name=".Leadership_Activity" />
         <activity android:name=".CampusTour" />
+        <activity android:name=".Score_board" />
 
 
         <activity android:name=".SplashMain">

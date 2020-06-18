@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.amiverse.HomeMain"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+
+    <item
+        android:id="@+id/notice"
+        android:title="@strings/Notice"
+        android/>
+
+    <item
+        android:id="@+id/announcement"
+        android:title="@strings/Announcements" />
+
+    <item
+        android:id="@+id/resultpdf"
+        android:title="@strings/Results"
+         />
+</menu>

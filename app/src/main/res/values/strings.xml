@@ -71,6 +71,7 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="message">Message</string>
+
     <string name="nameleader1">Lt Gen (retd) VK Sharma</string>
     <string name="nameleader2">Prof. (Dr.) M.P. Kaushik</string>
     <string name="descleader1">I invite the young eager minds to Amity University, Madhya Pradesh, and equip themselves with knowledge and skills required to explore the changing landscape of economy and world. The university empowers its students through a holistic curriculum which includes training in personality development and confidence building; developing communication skills, team building through sports activities; learning discipline through military training camps and so on. The impeccable training gives a decisive edge to students in placement drive, which are considered the best across the country.
@@ -79,6 +80,26 @@ Amity University, Madhya Pradesh, is committed to create a centre of excellence 
     <string name="descleader2">With a legacy spanning two decades, the Amity University has become a brand name in the world of education. The university represents a world-class education culture characterized by globally benchmarked campuses and infrastructure, outstanding students, path breaking research and strong partnerships forged with key industries. The university puts its best in terms of academics and designs a dynamic curriculum that empowers youth and gives them an agility to respond to the evolving paradigms of pedagogy and practice. We consider this agility and hands-on training essential for higher education today. My best wishes to all students.</string>
     <string name="leader1design">Vice Chancellor, AUMP</string>
     <string name="leader2design">Pro Vice-Chancellor, AUMP</string>
+
+    <string name="gold"> gold</string>
+    <string name="silver"> silver</string>
+    <string name="bronz"> bronze</string>
+    <string name="Block"> Block</string>
+    <string name="Score"> score</string>
+    <string name="ALS"> als</string>
+    <string name="ABS"> abs</string>
+    <string name="ASET"> aset</string>
+    <string name="ASCO"> asco</string>
+    <string name="ASFD"> asfd</string>
+    <string name="AIBAS"> aibas</string>
+    <string name="ASP"> asp</string>
+    <string name="Gold_medal"> goldmedal</string>
+    <string name="Silver_medal"> silvermedal</string>
+    <string name="Bronze_medal"> bronze </string>
+    <string name="submit">submit</string>
+
+    <string name="Results">Results</string>
+    <string name="Campustour">360 Campus Tour</string>
 
 
 </resources>

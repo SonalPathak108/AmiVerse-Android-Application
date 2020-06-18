@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_goneMarginBottom="30dp"
+    android:background="#ffffff"
+    tools:context=".Score_board">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="03dp"
+            android:paddingBottom="40sp"
+            android:text="@string/Block"
+            android:padding="30dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@color/yellow"
+            android:layout_marginRight="03dp" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:background="@color/yellow"
+            android:contentDescription="@string/gold"
+            android:src="@drawable/gold"
+            android:layout_marginRight="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:background="@color/yellow"
+            android:contentDescription="@string/silver"
+            android:src="@drawable/silver"
+            android:layout_marginRight="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:background="@color/yellow"
+            android:contentDescription="@string/bronz"
+            android:src="@drawable/bronz"
+            android:layout_marginRight="10dp" />
+
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginEnd="20dp"
+            android:background="@color/yellow"
+            android:paddingBottom="40dp"
+            android:text="@string/Score"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="30dp"
+            android:layout_marginRight="20dp" />
+    </LinearLayout>
+    <TableRow android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/ABS"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+
+                android:maxLength="2"
+                android:layout_marginRight="15dp"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                android:maxLength="2"
+                android:layout_marginRight="15dp" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                android:maxLength="2"
+                android:layout_marginRight="15dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="1dp"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:text=""
+
+            android:maxLength="3"
+
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/grey">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/ALS"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+
+                android:maxLength="2"
+                android:gravity="center_horizontal"
+                android:layout_marginRight="15dp" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                android:maxLength="2"
+                android:layout_marginRight="15dp" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                android:maxLength="2"
+                android:layout_marginRight="15dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_marginHorizontal="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_gravity="center"
+            android:padding="20dp"
+
+
+            android:maxLength="3"
+
+            android:textColor="@color/colorPrimaryDark"
+            android:text=""
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/grey">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/ASET"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+
+                android:maxLength="2"
+                android:layout_marginRight="15dp" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                android:maxLength="2"
+                android:layout_marginRight="15dp" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                android:maxLength="2"
+                android:layout_marginRight="15dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:text=""
+
+            android:maxLength="3"
+            android:textColor="@color/colorPrimaryDark"
+
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/grey">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/ASCO"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+
+                android:maxLength="2"
+                android:gravity="center_horizontal"
+                android:layout_marginRight="15dp" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                android:maxLength="2"
+                android:layout_marginRight="15dp" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                android:maxLength="2"
+                android:layout_marginRight="15dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="1dp"
+            android:layout_marginBottom="1dp"
+
+            android:padding="20dp"
+
+
+            android:maxLength="3"
+
+            android:textColor="@color/colorPrimaryDark"
+            android:text=""
+            android:textStyle="bold" />
+    </TableRow>
+
+
+
+    <TableRow android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/grey">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/AIBAS"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+
+                android:maxLength="2"
+                android:layout_marginRight="15dp"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                android:maxLength="2"
+                android:layout_marginRight="15dp" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                android:maxLength="2"
+                android:layout_marginRight="15dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_marginHorizontal="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:text=""
+
+            android:maxLength="3"
+
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+    </TableRow>
+    <TableRow android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/ASP"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+
+                android:maxLength="2"
+                android:gravity="center_horizontal"
+                android:layout_marginRight="15dp" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                android:maxLength="2"
+                android:layout_marginRight="15dp" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                android:maxLength="2"
+                android:layout_marginRight="15dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_gravity="center"
+            android:padding="20dp"
+
+            android:maxLength="3"
+            android:textColor="@color/colorPrimaryDark"
+            android:text=""
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/grey">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/ASFD"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+
+                android:maxLength="2"
+                android:gravity="center_horizontal"
+                android:layout_marginRight="15dp" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                android:maxLength="2"
+                android:layout_marginRight="15dp" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                android:maxLength="2"
+                android:layout_marginRight="15dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:text=""
+            android:maxLength="3"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+    </TableRow>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</TableLayout>
