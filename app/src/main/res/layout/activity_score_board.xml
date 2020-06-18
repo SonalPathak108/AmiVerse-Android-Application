@@ -8,6 +8,10 @@
     app:layout_goneMarginBottom="30dp"
     android:background="#ffffff"
     tools:context=".Score_board">
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"

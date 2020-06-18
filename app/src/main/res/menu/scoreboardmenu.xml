@@ -7,15 +7,15 @@
 
     <item
         android:id="@+id/notice"
-        android:title="@strings/Notice"
-        android/>
+        android:title="@string/Notice"
+        />
 
     <item
         android:id="@+id/announcement"
-        android:title="@strings/Announcements" />
+        android:title="@string/Announcement" />
 
     <item
         android:id="@+id/resultpdf"
-        android:title="@strings/Results"
+        android:title="@string/Result"
          />
 </menu>
