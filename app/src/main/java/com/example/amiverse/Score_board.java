@@ -64,9 +64,9 @@ public class Score_board extends AppCompatActivity {
             case R.id.notice:
                 return true;
             case R.id.announcement:
-               return true;
+
             case R.id.resultpdf:
-                return  true;
+
 
 
         }

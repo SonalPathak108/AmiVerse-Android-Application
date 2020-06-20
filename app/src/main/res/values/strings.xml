@@ -103,6 +103,7 @@ Amity University, Madhya Pradesh, is committed to create a centre of excellence 
     <string name="Result">Result</string>
     <string name="Notice">Notice</string>
     <string name="Announcement">Announcement</string>
+    <string name="admin">admin</string>
 
     <string-array name="Block">
         <item>ABS</item>

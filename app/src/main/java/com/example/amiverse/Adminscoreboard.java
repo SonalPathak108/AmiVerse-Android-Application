@@ -24,7 +24,7 @@ public class Adminscoreboard extends AppCompatActivity implements AdapterView.On
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        String text = parent.getItemAtPosition(position).toString();
+//        String   = parent.getItemAtPosition(position).toString();
 
     }
 
