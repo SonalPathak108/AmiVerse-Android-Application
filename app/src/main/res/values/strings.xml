@@ -86,25 +86,33 @@ Amity University, Madhya Pradesh, is committed to create a centre of excellence 
     <string name="bronz"> bronze</string>
     <string name="Block"> Block</string>
     <string name="Score"> score</string>
-    <string name="ALS"> als</string>
-    <string name="ABS"> abs</string>
-    <string name="ASET"> aset</string>
-    <string name="ASCO"> asco</string>
-    <string name="ASFD"> asfd</string>
-    <string name="AIBAS"> aibas</string>
-    <string name="ASP"> asp</string>
-    <string name="Gold_medal"> goldmedal</string>
-    <string name="Silver_medal"> silvermedal</string>
-    <string name="Bronze_medal"> bronze </string>
-    <string name="submit">submit</string>
-
+    <string name="ALS"> ALS</string>
+    <string name="ABS"> ABS</string>
+    <string name="ASET"> ASET</string>
+    <string name="ASCO"> ASCO</string>
+    <string name="ASFD"> ASDF</string>
+    <string name="AIBAS"> AIBAS</string>
+    <string name="ASP">ASP</string>
+    <string name="Gold_medal"> Gold_medal</string>
+    <string name="Silver_medal"> Silver_medal</string>
+    <string name="Bronze_medal"> Bronze_medal </string>
+    <string name="submit">Submit</string>
+    <string name="Scorecard">Scorecard</string>
     <string name="Results">Results</string>
     <string name="Campustour">360 Campus Tour</string>
     <string name="Result">Result</string>
     <string name="Notice">Notice</string>
     <string name="Announcement">Announcement</string>
 
-
+    <string-array name="Block">
+        <item>ABS</item>
+        <item>ALS</item>
+        <item>ASET</item>
+        <item>ASCO</item>
+        <item>AIBAS</item>
+        <item>ASP</item>
+        <item>ASFD</item>
+    </string-array>
 
 
 </resources>
