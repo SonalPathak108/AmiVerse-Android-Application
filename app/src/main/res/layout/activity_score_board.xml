@@ -34,7 +34,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="05dp"
             android:padding="10dp"
             android:background="@color/yellow"
             android:contentDescription="@string/gold"
@@ -44,7 +44,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="05dp"
             android:padding="10dp"
             android:background="@color/yellow"
             android:contentDescription="@string/silver"
@@ -54,7 +54,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="03dp"
             android:padding="10dp"
             android:background="@color/yellow"
             android:contentDescription="@string/bronz"
@@ -66,7 +66,7 @@
             android:layout_width="120dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginEnd="20dp"
+            android:layout_marginEnd="30dp"
             android:background="@color/yellow"
             android:paddingBottom="40dp"
             android:text="@string/Score"
@@ -86,7 +86,7 @@
             android:layout_width="80dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginHorizontal="10dp"
+            android:layout_marginHorizontal="05dp"
             android:text="@string/ABS"
             android:textAlignment="center"
             android:textColor="@color/colorAccent"
@@ -97,7 +97,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="20dp"
-            android:layout_marginRight="20dp">
+            android:layout_marginRight="20dp"
+            >
 
             <TextView
                 android:layout_width="40dp"
@@ -107,7 +108,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textAlignment="center"
-                android:id="@+id/tv1"
+                android:id="@+id/Abs_gold"
                 android:maxLength="2"
                 android:layout_marginRight="15dp"
                 android:gravity="center_horizontal" />
@@ -119,7 +120,7 @@
                 android:text=""
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:id="@+id/tv2"
+                android:id="@+id/Abs_silver"
                 android:maxLength="2"
                 android:layout_marginRight="15dp" />
 
@@ -130,7 +131,7 @@
                 android:text=""
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:id="@+id/tv3"
+                android:id="@+id/Abs_bronze"
                 android:maxLength="2"
                 android:layout_marginRight="15dp" />
 
@@ -143,7 +144,7 @@
             android:layout_gravity="center"
             android:padding="20dp"
             android:text=""
-            android:id="@+id/tv4"
+            android:id="@+id/Abs_score"
             android:maxLength="3"
 
             android:textColor="@color/colorPrimaryDark"
@@ -161,7 +162,7 @@
             android:layout_width="80dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginHorizontal="10dp"
+            android:layout_marginHorizontal="05dp"
             android:text="@string/ALS"
             android:textAlignment="center"
             android:textColor="@color/colorAccent"
@@ -181,7 +182,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textAlignment="center"
-                android:id="@+id/tv5"
+                android:id="@+id/Als_gold"
                 android:maxLength="2"
                 android:gravity="center_horizontal"
                 android:layout_marginRight="15dp" />
@@ -193,7 +194,7 @@
                 android:text=""
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:id="@+id/tv6"
+                android:id="@+id/Als_silver"
                 android:maxLength="2"
                 android:layout_marginRight="15dp" />
 
@@ -204,7 +205,7 @@
                 android:text=""
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:id="@+id/tv7"
+                android:id="@+id/Als_bronze"
                 android:maxLength="2"
                 android:layout_marginRight="15dp" />
         </LinearLayout>
@@ -218,7 +219,7 @@
             android:layout_gravity="center"
             android:padding="20dp"
 
-            android:id="@+id/tv8"
+            android:id="@+id/Als_score"
             android:maxLength="3"
 
             android:textColor="@color/colorPrimaryDark"
@@ -237,7 +238,7 @@
             android:layout_width="80dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginHorizontal="10dp"
+            android:layout_marginHorizontal="05dp"
             android:text="@string/ASET"
             android:textAlignment="center"
             android:textColor="@color/colorAccent"
@@ -257,7 +258,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
 
-                android:id="@+id/tv9"
+                android:id="@+id/Aset_gold"
                 android:maxLength="2"
                 android:layout_marginRight="15dp" />
 
@@ -268,7 +269,7 @@
                 android:text=""
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:id="@+id/tv10"
+                android:id="@+id/Aset_silver"
                 android:maxLength="2"
                 android:layout_marginRight="15dp" />
 
@@ -279,7 +280,7 @@
                 android:text=""
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:id="@+id/tv11"
+                android:id="@+id/Aset_bronze"
                 android:maxLength="2"
                 android:layout_marginRight="15dp" />
         </LinearLayout>
@@ -292,7 +293,7 @@
             android:layout_gravity="center"
             android:padding="20dp"
             android:text=""
-            android:id="@+id/tv12"
+            android:id="@+id/Aset_score"
             android:maxLength="3"
             android:textColor="@color/colorPrimaryDark"
 
@@ -310,7 +311,7 @@
             android:layout_width="80dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginHorizontal="10dp"
+            android:layout_marginHorizontal="05dp"
             android:text="@string/ASCO"
             android:textAlignment="center"
             android:textColor="@color/colorAccent"
@@ -330,7 +331,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textAlignment="center"
-                android:id="@+id/tv13"
+                android:id="@+id/Asco_gold"
                 android:maxLength="2"
                 android:gravity="center_horizontal"
                 android:layout_marginRight="15dp" />
@@ -342,7 +343,7 @@
                 android:text=""
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:id="@+id/tv14"
+                android:id="@+id/Asco_silver"
                 android:maxLength="2"
                 android:layout_marginRight="15dp" />
 
@@ -353,7 +354,7 @@
                 android:text=""
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:id="@+id/tv15"
+                android:id="@+id/Asco_bronze"
                 android:maxLength="2"
                 android:layout_marginRight="15dp" />
         </LinearLayout>
@@ -366,7 +367,7 @@
             android:layout_marginBottom="1dp"
 
             android:padding="20dp"
-            android:id="@+id/tv16"
+            android:id="@+id/Asco_score"
 
             android:maxLength="3"
 
@@ -388,7 +389,7 @@
             android:layout_width="80dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginHorizontal="10dp"
+            android:layout_marginHorizontal="05dp"
             android:text="@string/AIBAS"
             android:textAlignment="center"
             android:textColor="@color/colorAccent"
@@ -408,7 +409,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textAlignment="center"
-                android:id="@+id/tv17"
+                android:id="@+id/Aibas_gold"
                 android:maxLength="2"
                 android:layout_marginRight="15dp"
                 android:gravity="center_horizontal" />
@@ -420,7 +421,7 @@
                 android:text=""
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:id="@+id/tv18"
+                android:id="@+id/Aibas_silver"
                 android:maxLength="2"
                 android:layout_marginRight="15dp" />
 
@@ -431,7 +432,7 @@
                 android:text=""
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:id="@+id/tv19"
+                android:id="@+id/Aibas_bronze"
                 android:maxLength="2"
                 android:layout_marginRight="15dp" />
         </LinearLayout>
@@ -444,7 +445,7 @@
             android:layout_gravity="center"
             android:padding="20dp"
             android:text=""
-            android:id="@+id/tv20"
+            android:id="@+id/Aibas_score"
             android:maxLength="3"
 
             android:textColor="@color/colorPrimaryDark"
@@ -460,7 +461,7 @@
             android:layout_width="80dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginHorizontal="10dp"
+            android:layout_marginHorizontal="05dp"
             android:text="@string/ASP"
             android:textAlignment="center"
             android:textColor="@color/colorAccent"
@@ -480,7 +481,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textAlignment="center"
-                android:id="@+id/tv21"
+                android:id="@+id/Asp_gold"
                 android:maxLength="2"
                 android:gravity="center_horizontal"
                 android:layout_marginRight="15dp" />
@@ -492,7 +493,7 @@
                 android:text=""
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:id="@+id/tv22"
+                android:id="@+id/Asp_silver"
                 android:maxLength="2"
                 android:layout_marginRight="15dp" />
 
@@ -503,7 +504,7 @@
                 android:text=""
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:id="@+id/tv23"
+                android:id="@+id/Asp_bronze"
                 android:maxLength="2"
                 android:layout_marginRight="15dp" />
         </LinearLayout>
@@ -514,7 +515,7 @@
             android:layout_marginBottom="1dp"
             android:layout_gravity="center"
             android:padding="20dp"
-            android:id="@+id/tv24"
+            android:id="@+id/Asp_score"
             android:maxLength="3"
             android:textColor="@color/colorPrimaryDark"
             android:text=""
@@ -528,11 +529,12 @@
         android:layout_marginStart="20dp"
         android:layout_marginBottom="10dp"
         android:background="@color/grey">
+
         <TextView
-            android:layout_width="80dp"
-            android:layout_height="match_parent"
+            android:layout_width="23dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginHorizontal="10dp"
+            android:layout_marginHorizontal="05dp"
             android:text="@string/ASFD"
             android:textAlignment="center"
             android:textColor="@color/colorAccent"
@@ -551,7 +553,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textAlignment="center"
-                android:id="@+id/tv25"
+                android:id="@+id/Afd_gold"
                 android:maxLength="2"
                 android:gravity="center_horizontal"
                 android:layout_marginRight="15dp" />
@@ -563,7 +565,7 @@
                 android:text=""
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:id="@+id/tv26"
+                android:id="@+id/Afd_silver"
                 android:maxLength="2"
                 android:layout_marginRight="15dp" />
 
@@ -574,7 +576,7 @@
                 android:text=""
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:id="@+id/tv27"
+                android:id="@+id/Afd_bronze"
                 android:maxLength="2"
                 android:layout_marginRight="15dp" />
         </LinearLayout>
@@ -587,7 +589,7 @@
             android:padding="20dp"
             android:text=""
             android:maxLength="3"
-            android:id="@+id/tv28"
+            android:id="@+id/Afd_score"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold" />
     </TableRow>
