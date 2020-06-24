@@ -11,8 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true"
-        >
+        android:usesCleartextTraffic="true">
+        <activity android:name=".scoreCard"/>
         <activity android:name=".menuNav" />
         <activity android:name=".gallery" />
         <activity android:name=".club_activity" />
@@ -24,10 +24,7 @@
         <activity android:name=".Quick_links" />
         <activity android:name=".Leadership_Activity" />
         <activity android:name=".CampusTour" />
-        <activity android:name=".Score_board" />
         <activity android:name=".Adminscoreboard" />
-
-
         <activity android:name=".SplashMain">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
