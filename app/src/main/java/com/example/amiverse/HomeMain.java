@@ -98,7 +98,7 @@ public class HomeMain extends AppCompatActivity {
         scorecard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent scorecard= new Intent(v.getContext(),Score_board.class);
+                Intent scorecard= new Intent(v.getContext(),scoreCard.class);
                 startActivity(scorecard);
             }
         });
@@ -108,7 +108,7 @@ public class HomeMain extends AppCompatActivity {
         admin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent admin_score= new Intent(v.getContext(),Score_board.class);
+                Intent admin_score= new Intent(v.getContext(),Adminscoreboard.class);
                 startActivity(admin_score);
             }
         });
