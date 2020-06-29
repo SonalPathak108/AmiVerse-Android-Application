@@ -39,7 +39,7 @@ public class SplashMain extends AppCompatActivity {
                             Intent i = new Intent(SplashMain.this, HomeMain.class);
                             startActivity(i);
                         }
-                        else
+                       else
                         {
                             sleep(3000);
                             Intent i = new Intent(SplashMain.this, LoginActivity.class);

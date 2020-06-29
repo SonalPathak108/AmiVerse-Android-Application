@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
         adminpanel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),UploadImage.class));
+                // startActivity(new Intent(getApplicationContext(),UploadImage.class));
+                Toast.makeText(MainActivity.this, "You have choose Admin Panel",Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -36,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         otherspanel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "You have choose Other Panel",Toast.LENGTH_SHORT).show();
 
             }
         });

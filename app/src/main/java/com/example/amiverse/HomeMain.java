@@ -20,7 +20,7 @@ import androidx.cardview.widget.CardView;
 public class HomeMain extends AppCompatActivity {
 
     GridLayout mainGrid;
-    ImageView quicklink,events,eforms,aumpclub,gallery,leadership,campustour,scorecard,admin;
+    ImageView quicklink,events,eforms,aumpclub,gallery,leadership,campustour,scorecard,scorecardadmin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,6 @@ public class HomeMain extends AppCompatActivity {
         setContentView(R.layout.activity_home_main);
 
         mainGrid = (GridLayout) findViewById(R.id.mainGrid);
-
         quicklink = (ImageView) findViewById(R.id.h_quick_link);
         events = (ImageView) findViewById(R.id.h_events);
         eforms = (ImageView) findViewById(R.id.h_eforms);
@@ -37,7 +36,7 @@ public class HomeMain extends AppCompatActivity {
         leadership = (ImageView) findViewById(R.id.h_contact_hierarchy);
         campustour =(ImageView) findViewById(R.id.h_campustour);
         scorecard =(ImageView) findViewById(R.id.h_scorecard);
-        scorecard =(ImageView) findViewById(R.id.h_admin_score);
+        scorecardadmin =(ImageView) findViewById(R.id.h_admin_score);
 
 
         quicklink.setOnClickListener(new View.OnClickListener() {
@@ -105,14 +104,13 @@ public class HomeMain extends AppCompatActivity {
 
 
 
-        admin.setOnClickListener(new View.OnClickListener() {
+        scorecardadmin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent admin_score= new Intent(v.getContext(),Adminscoreboard.class);
                 startActivity(admin_score);
             }
         });
-
     }
 
 

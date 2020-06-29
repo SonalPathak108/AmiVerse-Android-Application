@@ -399,7 +399,7 @@
 
                         <ImageView
                             android:id="@+id/h_scorecard"
-                            android:layout_width="94dp"
+                            android:layout_width="match_parent"
                             android:layout_height="94dp"
                             android:layout_gravity="center_horizontal"
                             android:contentDescription="@string/Scorecard"
