@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".hostelMain"></activity>
+        <activity android:name=".AdminLogin"></activity>
+        <activity android:name=".hostelMain" />
         <activity android:name=".scoreCard" />
         <activity android:name=".menuNav" />
         <activity android:name=".gallery" />
