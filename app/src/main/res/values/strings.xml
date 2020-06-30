@@ -19,7 +19,7 @@
     <string name="virtual360"><a href="https://www.google.co.in/maps/place/Amity+University+Gwalior/@26.2729206,78.2292078,2a,75y,105.15h,90t/data=!3m6!1e1!3m4!1sYISDbuM5MdCTxAeqeEG_PA!2e0!7i13312!8i6656!4m7!3m6!1s0x3976c0e647bece07:0xd848338a0d6a5393!8m2!3d26.2727152!4d78.2283897!14m1!1BCgIgARICCAI?hl=en">Amity 360 Virtual Tour</a></string>
 
     <string name="upcoming_events">Upcoming Events</string>
-
+    <string name="notice_board">NOTICE BOARD</string>
     <string name="amity_sangathan"><a href="https://www.amity.edu/infra-play-sangathan.aspx">Amity University Sangathan</a></string>
     <string name="amichroma"><a href="https://amityaump.com/">Amichroma</a></string>
     <string name="mediafest"><a href="http://addoe.amity.edu/">Media Fest 2020</a></string>

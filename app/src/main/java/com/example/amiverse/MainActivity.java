@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
         adminpanel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // startActivity(new Intent(getApplicationContext(),UploadImage.class));
-                Toast.makeText(MainActivity.this, "You have choose Admin Panel",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(),AdminLogin.class));
+                //Toast.makeText(MainActivity.this, "You have choose Admin Panel",Toast.LENGTH_SHORT).show();
             }
         });
 
