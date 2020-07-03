@@ -12,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".AdminLogin"></activity>
+        <activity android:name=".outpass"></activity>
+        <activity android:name=".hostelComplaint" />
+        <activity android:name=".NoticeBoard" />
+        <activity android:name=".AdminLogin" />
         <activity android:name=".hostelMain" />
         <activity android:name=".scoreCard" />
         <activity android:name=".menuNav" />
