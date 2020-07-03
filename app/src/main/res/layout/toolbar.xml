@@ -6,6 +6,8 @@
     android:fitsSystemWindows="true"
     android:orientation="vertical">
 
+
+
 <androidx.appcompat.widget.Toolbar
     android:id="@+id/myToolbar"
     android:layout_width="match_parent"

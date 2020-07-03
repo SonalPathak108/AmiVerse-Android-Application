@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item android:id="@+id/m_home"
+        android:title="Home"
+        android:icon="@drawable/menuhome" />
+
+    <item android:id="@+id/m_quicklinks"
+        android:title="Quick Links"
+        android:icon="@drawable/menuquicklinks" />
+
+    <item android:id="@+id/m_events"
+        android:title="Events"
+        android:icon="@drawable/menuevent" />
+
+    <item android:id="@+id/m_eforms"
+        android:title="E- Forms"
+        android:icon="@drawable/menueforms" />
+
+    <item android:id="@+id/m_aumpclubs"
+        android:title="AUMP Clubs"
+        android:icon="@drawable/menuclubs" />
+
+    <item android:id="@+id/m_gallery"
+        android:title="Gallery"
+        android:icon="@drawable/menugallery" />
+
+    <item android:id="@+id/m_campustour"
+        android:title="Campus Tour"
+        android:icon="@drawable/menucampustour" />
+
+    <item android:id="@+id/m_scoreboard"
+        android:title="Scoreboard"
+        android:icon="@drawable/menuscore" />
+</menu>
