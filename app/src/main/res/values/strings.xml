@@ -4,6 +4,9 @@
     <string name="amity_logo">Amity</string>
     <string name="home">Home</string>
     <string name="amiverse">AmiVerse</string>
+    <string name="login">Log in</string>
+    <string name="admin_login">Admin Login</string>
+    <string name="register_message">New User?</string>>
 
     <string name="quick_link">Quick Links</string>
     <string name="amity_web"><a href="https://www.amity.edu/">Amity University Website</a></string>
@@ -70,7 +73,7 @@
     <string name="leadership">Leadership</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
-    <string name="message">Message</string>
+    <string name="message">Already Amizoned?</string>
 
     <string name="nameleader1">Lt Gen (retd) VK Sharma</string>
     <string name="nameleader2">Prof. (Dr.) M.P. Kaushik</string>
@@ -81,7 +84,6 @@ Amity University, Madhya Pradesh, is committed to create a centre of excellence 
     <string name="leader1design">Vice Chancellor, AUMP</string>
     <string name="leader2design">Pro Vice-Chancellor, AUMP</string>
     <string name="name">Name</string>
-    <string name="rohit_sharma">Rohit Sharma</string>
     <string name="amiverse_user">Amiverse User</string>
     <string name="amimail">ami@gmail.com</string>
 

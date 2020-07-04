@@ -32,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        ed_email = findViewById(R.id.ed_email);
+        ed_email = findViewById(R.id.ed_name);
         ed_password = findViewById(R.id.ed_password);
     }
 
