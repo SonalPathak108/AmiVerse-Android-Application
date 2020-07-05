@@ -108,7 +108,7 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/ic_placement"
+                    android:src="@drawable/gold"
                     android:contentDescription="@string/app_name" />
 
                 <TextView
