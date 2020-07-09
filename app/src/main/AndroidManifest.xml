@@ -6,21 +6,20 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".outpass"></activity>
+        <activity android:name=".outpass"/>
         <activity android:name=".hostelComplaint" />
         <activity android:name=".NoticeBoard" />
         <activity android:name=".AdminLogin" />
         <activity android:name=".hostelMain" />
         <activity android:name=".scoreCard" />
-        <activity android:name=".menuNav" />
+        <activity android:name=".MenuActivity" />
         <activity android:name=".gallery" />
-        <activity android:name=".MainActivity" />
         <activity android:name=".club_activity" />
         <activity android:name=".eFormsMain" />
         <activity android:name=".Upcoming_events" />
@@ -29,9 +28,11 @@
         <activity android:name=".HomeMain" />
         <activity android:name=".Quick_links" />
         <activity android:name=".Leadership_Activity" />
-        <activity android:name=".CampusTour" />
         <activity android:name=".Adminscoreboard" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".SplashMain">
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

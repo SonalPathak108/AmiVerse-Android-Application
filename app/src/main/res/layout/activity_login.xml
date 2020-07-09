@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/bd_card"
         android:orientation="vertical"
-        android:padding="40dp"
+        android:padding="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">

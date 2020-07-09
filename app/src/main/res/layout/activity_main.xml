@@ -7,7 +7,6 @@
     tools:context=".MainActivity"
     >
 
-
     <LinearLayout
         android:background="@drawable/official_logo"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
@@ -41,45 +40,33 @@
             android:textColor="@android:color/black"
             />
 
-
-
-
-
             <Button
                 android:id="@+id/admin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Admin Panel"
                 android:layout_marginTop="40dp"
+                android:textAllCaps="false"
                 android:background="@drawable/bgbtn_home"
                />
-
-
-
 
             <Button
                 android:id="@+id/student"
                 android:layout_width="match_parent"
                android:layout_height="wrap_content"
-                android:text="Amity University Student Panel"
+                android:text="@string/student_panel"
+                android:textAllCaps="false"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/bgbtn_home" />
 
-
-
-
             <Button
+                android:textAllCaps="false"
                 android:id="@+id/others"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Others Student Panel"
+                android:text="@string/guest"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/bgbtn_home" />
     </LinearLayout>
-
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

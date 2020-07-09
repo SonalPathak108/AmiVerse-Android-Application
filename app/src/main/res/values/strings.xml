@@ -27,7 +27,8 @@
     <string name="amichroma"><a href="https://amityaump.com/">Amichroma</a></string>
     <string name="mediafest"><a href="http://addoe.amity.edu/">Media Fest 2020</a></string>
     <string name="conference"><a href="https://amity.edu/gwalior/event-detail-normal.aspx?Event=10023">Conference</a></string>
-
+    <string name="dept">Department: ASET</string>
+    <string name="date2">21 Jan</string>
     <string name="sangathan"><a href="https://www.amity.edu/gwalior/photo-gallery">Sangathan</a></string>
     <string name="Amichroma"><a href="https://www.amity.edu/gwalior/photo-gallery">AmiChroma</a></string>
     <string name="Raising_day"><a href="https://www.amity.edu/gwalior/photo-gallery">Raising Day</a></string>
@@ -46,6 +47,7 @@
     <string name="organiser_mr_dinesh_sharma">Organiser:Mr.Dinesh Sharma</string>
     <string name="department_aset_cse">Department:ASET(CSE)</string>
     <string name="date_24_may_2020">Date:24 May 2020</string>
+    <string name="date">24 July</string>
     <string name="go_for_registration">Go for Registration</string>
     <string name="events">Events</string>
     <string name="register_button">Register</string>
@@ -64,11 +66,13 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="scoreboard">Sangathan Scoreboard</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
-
+    <string name="guest">Guest Login</string>
+    <string name="student_panel">Amitians Login</string>
     <string name="home_second">Home Second</string>
     <string name="leadership">Leadership</string>
     <string name="email">Email</string>
@@ -79,8 +83,8 @@
     <string name="nameleader2">Prof. (Dr.) M.P. Kaushik</string>
     <string name="descleader1">I invite the young eager minds to Amity University, Madhya Pradesh, and equip themselves with knowledge and skills required to explore the changing landscape of economy and world. The university empowers its students through a holistic curriculum which includes training in personality development and confidence building; developing communication skills, team building through sports activities; learning discipline through military training camps and so on. The impeccable training gives a decisive edge to students in placement drive, which are considered the best across the country.
 
-Amity University, Madhya Pradesh, is committed to create a centre of excellence in higher education by imbibing strong human and ethical values and professional acumen, thus making it a highly sought after academic institute of the country.</string>
-    <string name="descleader2">With a legacy spanning two decades, the Amity University has become a brand name in the world of education. The university represents a world-class education culture characterized by globally benchmarked campuses and infrastructure, outstanding students, path breaking research and strong partnerships forged with key industries. The university puts its best in terms of academics and designs a dynamic curriculum that empowers youth and gives them an agility to respond to the evolving paradigms of pedagogy and practice. We consider this agility and hands-on training essential for higher education today. My best wishes to all students.</string>
+</string>
+    <string name="descleader2">The university represents a world-class education culture characterized by globally benchmarked campuses and infrastructure, outstanding students, path breaking research and strong partnerships forged with key industries. The university puts its best in terms of academics and designs a dynamic curriculum that empowers youth and gives them an agility to respond to the evolving paradigms of pedagogy and practice. We consider this agility and hands-on training essential for higher education today. My best wishes to all students.</string>
     <string name="leader1design">Vice Chancellor, AUMP</string>
     <string name="leader2design">Pro Vice-Chancellor, AUMP</string>
     <string name="name">Name</string>

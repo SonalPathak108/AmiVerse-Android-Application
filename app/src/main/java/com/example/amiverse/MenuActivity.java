@@ -29,7 +29,6 @@ public class MenuActivity extends AppCompatActivity implements NavigationView.On
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         drawerLayout = findViewById(R.id.draw);
-        toolbar = findViewById(R.id.tool);
         name = findViewById(R.id.name);
         button = findViewById(R.id.button);
 
@@ -82,11 +81,6 @@ public class MenuActivity extends AppCompatActivity implements NavigationView.On
             case R.id.m_gallery:
                 Intent i6 = new Intent(this,gallery.class);
                 startActivity(i6);
-            break;
-
-            case R.id.m_campustour:
-                Intent i7 = new Intent(this,CampusTour.class);
-                startActivity(i7);
             break;
 
             case R.id.m_scoreboard:
