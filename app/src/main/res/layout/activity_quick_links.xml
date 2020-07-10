@@ -66,7 +66,7 @@
                  <ImageView
                      android:layout_width="50dp"
                      android:layout_height="50dp"
-                     android:src="@drawable/ic_website"
+                     app:srcCompat="@drawable/university"
                      android:contentDescription="@string/app_name" />
 
          <TextView
@@ -76,7 +76,7 @@
              android:layout_height="wrap_content"
              android:text="@string/amity_web"
              android:textColor="@color/black"
-             android:textSize="20sp"
+             android:textSize="18sp"
              android:textStyle="normal"
              android:layout_marginStart="5dp"
              android:layout_marginLeft="5dp" />
@@ -92,7 +92,7 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/gold"
+                    app:srcCompat="@drawable/job"
                     android:contentDescription="@string/app_name" />
 
                 <TextView
@@ -104,7 +104,7 @@
                     android:layout_marginLeft="5dp"
              android:text="@string/placement"
              android:textColor="@color/black"
-             android:textSize="20sp"
+             android:textSize="18sp"
              android:textStyle="normal"
              />
             </LinearLayout>
@@ -118,7 +118,7 @@
               <ImageView
                   android:layout_width="50dp"
                   android:layout_height="50dp"
-                  android:src="@drawable/ic_distance_learning"
+                  app:srcCompat="@drawable/teaching"
                   android:contentDescription="@string/app_name" />
 
 
@@ -131,7 +131,7 @@
                  android:text="@string/dist_learn"
                  android:padding="5dp"
                  android:textColor="@color/black"
-                 android:textSize="20sp"
+                 android:textSize="18sp"
                  android:textStyle="normal"
                  />
 
@@ -148,7 +148,7 @@
                <ImageView
                    android:layout_width="50dp"
                    android:layout_height="50dp"
-                   android:src="@drawable/ic_courses"
+                   app:srcCompat="@drawable/graduation"
                    android:contentDescription="@string/app_name" />
 
 
@@ -161,7 +161,7 @@
                  android:layout_marginLeft="5dp"
                  android:text="@string/prog_web"
                  android:textColor="@color/black"
-                 android:textSize="20sp"
+                 android:textSize="18sp"
                  android:textStyle="normal"
                  />
            </LinearLayout>
@@ -188,7 +188,7 @@
                  android:layout_marginStart="5dp"
                  android:layout_marginLeft="5dp"
                  android:textColor="@color/black"
-                 android:textSize="20sp"
+                 android:textSize="18sp"
 
                  android:textStyle="normal"
                  />
@@ -204,7 +204,7 @@
              <ImageView
                  android:layout_width="50dp"
                  android:layout_height="50dp"
-                 android:src="@drawable/ic_tour"
+                 app:srcCompat="@drawable/tour"
                  android:contentDescription="@string/app_name" />
 
              <TextView
@@ -216,7 +216,7 @@
                  android:layout_marginLeft="5dp"
                  android:text="@string/virtual360"
                  android:textColor="@color/black"
-                 android:textSize="20sp"
+                 android:textSize="18sp"
 
                  android:textStyle="normal"
                  />
@@ -232,7 +232,7 @@
              <ImageView
                  android:layout_width="50dp"
                  android:layout_height="50dp"
-                 android:src="@drawable/ic_coding_club"
+                 app:srcCompat="@drawable/coding"
                  android:contentDescription="@string/app_name" />
 
              <TextView
@@ -242,7 +242,7 @@
                  android:padding="5dp"
                  android:text="@string/acc"
                  android:textColor="@color/black"
-                 android:textSize="20sp"
+                 android:textSize="18sp"
                  android:layout_marginStart="5dp"
                  android:layout_marginLeft="5dp"
 
@@ -261,7 +261,7 @@
              <ImageView
                  android:layout_width="50dp"
                  android:layout_height="50dp"
-                 android:src="@drawable/ic_carrier"
+                 app:srcCompat="@drawable/briefcase"
                  android:contentDescription="@string/app_name" />
 
              <TextView
@@ -271,7 +271,7 @@
                  android:padding="5dp"
                  android:text="@string/carrier"
                  android:textColor="@color/black"
-                 android:textSize="20sp"
+                 android:textSize="18sp"
                  android:layout_marginStart="5dp"
                  android:layout_marginLeft="5dp"
 
@@ -279,16 +279,6 @@
                  />
 
              </LinearLayout>
-
-
-
-
-
-
-
-
-
-
 
          </LinearLayout>
      </ScrollView>

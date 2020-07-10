@@ -79,7 +79,7 @@
                     android:layout_height="80dp"
                     android:layout_gravity="center_horizontal"
                     android:contentDescription="@string/quick_link"
-                    android:src="@drawable/quicklinks" />
+                    app:srcCompat="@drawable/search" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -116,7 +116,7 @@
                     android:layout_height="80dp"
                     android:layout_gravity="center_horizontal"
                     android:contentDescription="@string/upcoming_events"
-                    android:src="@drawable/upcoming_events" />
+                    app:srcCompat="@drawable/event" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -152,7 +152,7 @@
                     android:layout_height="80dp"
                     android:layout_gravity="center_horizontal"
                     android:contentDescription="@string/e_forms"
-                    android:src="@drawable/eforms" />
+                    app:srcCompat="@drawable/form" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -189,7 +189,7 @@
                     android:layout_height="80dp"
                     android:layout_gravity="center_horizontal"
                     android:contentDescription="@string/aump_clubs"
-                    android:src="@drawable/clubs" />
+                    app:srcCompat="@drawable/ic_club" />
 
                 <TextView
                     android:layout_width="wrap_content"
