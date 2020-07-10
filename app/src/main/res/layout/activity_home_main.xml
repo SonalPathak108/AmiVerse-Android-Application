@@ -16,8 +16,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
-        >
+        android:layout_marginBottom="30dp" >
 
         <ImageView
             android:id="@+id/imageView2"
@@ -49,7 +48,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="edmt.dev.androidgridlayout.MainActivity">
+        tools:context=".MainActivity">
 
         <LinearLayout
             android:orientation="vertical"
@@ -347,18 +346,19 @@
                         <ImageView
                             android:id="@+id/h_scorecard"
                             android:layout_width="match_parent"
-                            android:layout_height="94dp"
+                            android:layout_height="80dp"
                             android:layout_gravity="center_horizontal"
-                            android:contentDescription="@string/Scorecard"
+                            android:contentDescription="@string/scoreboard"
                             android:src="@drawable/gold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/Scorecard"
+                            android:text="@string/scoreboard"
                             android:textColor="@android:color/black"
                             android:textSize="15sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:gravity="center"/>
 
                     </LinearLayout>
 
@@ -411,7 +411,7 @@
                 android:id="@+id/campustour"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Campus 360 Tour"
+                android:text="@string/tour"
                 android:textSize="20sp"
                 android:textColor="@color/white"
                 android:background="@drawable/button"

@@ -39,7 +39,6 @@
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:contentDescription="@string/amity_logo"
             android:src="@drawable/official_logo"
             />
 
@@ -47,7 +46,7 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/form1"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         app:cardElevation="20dp"
@@ -67,7 +66,8 @@
                 android:text="@string/date"
                 android:textColor="#000000"
                 android:background="@drawable/calendar"
-                android:textSize="15sp"
+                android:textSize="14sp"
+                android:layout_gravity="center"
                 android:gravity="center" />
 
         <LinearLayout
@@ -81,21 +81,21 @@
                 android:text="@string/coding_competition"
                 android:textColor="#000000"
                 android:textSize="20sp"
-                android:layout_gravity="left"/>
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/organiser_mr_dinesh_sharma"
                 android:textSize="16sp"
-                android:layout_gravity="left"/>
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/dept"
                 android:textSize="16sp"
-                android:layout_gravity="left"/>
+                />
 
             <Button
                 android:id="@+id/oval1"
@@ -113,7 +113,7 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/form2"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         app:cardElevation="20dp"
@@ -133,8 +133,10 @@
                 android:text="@string/date2"
                 android:textColor="#000000"
                 android:background="@drawable/calendar"
-                android:textSize="15sp"
-                android:gravity="center" />
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
 
             <LinearLayout
                 android:layout_height="wrap_content"
@@ -154,14 +156,14 @@
                     android:layout_height="wrap_content"
                     android:text="@string/organiser_mr_dinesh_sharma"
                     android:textSize="16sp"
-                    android:layout_gravity="left"/>
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/dept"
                     android:textSize="16sp"
-                    android:layout_gravity="left"/>
+                    />
 
                 <Button
                     android:id="@+id/oval2"

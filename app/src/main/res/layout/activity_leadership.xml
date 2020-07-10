@@ -46,6 +46,10 @@
 
     </LinearLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Leadership_Activity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -165,4 +169,5 @@
                 </LinearLayout>
             </LinearLayout>
     </LinearLayout>
+    </ScrollView>
 </LinearLayout>
