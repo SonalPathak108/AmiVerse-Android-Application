@@ -8,6 +8,41 @@
     android:padding="20dp"
     tools:context=".UploadImage">
 
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/menu" />
+
+        <TextView
+            android:id="@+id/club_aump"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="@string/amiverse"
+            android:textColor="@color/navyblue"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/amity_logo"
+            android:src="@drawable/official_logo"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="300dp"

@@ -16,17 +16,16 @@
         android:layout_width="150dp"
         android:layout_height="150dp"/>
 
-    <LinearLayout
+        <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/bd_card"
         android:orientation="vertical"
-        android:padding="30dp"
+        android:padding="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
-
 
         <TextView
             android:id="@+id/textView"
@@ -34,7 +33,7 @@
             android:layout_height="wrap_content"
             android:text="@string/register_button"
             android:layout_gravity="center"
-            android:textSize="28sp"
+            android:textSize="24sp"
             android:textStyle="bold"
             android:textColor="@android:color/black"
             />
@@ -52,7 +51,8 @@
                 android:background="@drawable/bgedittext"
                 android:hint="@string/name"
                 android:inputType="textPersonName"
-                android:autofillHints="@string/name" />
+                android:autofillHints="@string/name"
+                android:maxLength="12"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -69,7 +69,8 @@
                 android:background="@drawable/bgedittext"
                 android:hint="@string/email"
                 android:inputType="textEmailAddress"
-                android:autofillHints="@string/email" />
+                android:autofillHints="@string/email"
+                android:maxLength="12"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -86,7 +87,8 @@
                 android:ems="10"
                 android:hint="@string/password"
                 android:inputType="textPassword"
-                android:autofillHints="@string/email" />
+                android:autofillHints="@string/email"
+                android:maxLength="12"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
@@ -98,6 +100,7 @@
             android:background="@drawable/bg_btn"
             android:layout_marginTop="32dp"
             android:onClick="Register"
+            android:textAllCaps="false"
             android:text="@string/register_button"
             />
 

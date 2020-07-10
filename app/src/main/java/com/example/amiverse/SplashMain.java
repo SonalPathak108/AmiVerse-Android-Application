@@ -12,11 +12,7 @@ import static java.lang.Thread.sleep;
 
 public class SplashMain extends AppCompatActivity {
 
-
-
     ImageView splash_image;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

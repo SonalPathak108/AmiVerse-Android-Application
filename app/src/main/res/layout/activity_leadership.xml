@@ -14,19 +14,20 @@
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
-        android:layout_marginBottom="30dp">
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center">
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
             android:contentDescription="@string/app_name"
-            app:srcCompat="@drawable/menu"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="87dp" />
+            app:srcCompat="@drawable/menu" />
+
 
         <TextView
             android:id="@+id/club_aump"
@@ -38,11 +39,13 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:contentDescription="@string/amity_logo"
             android:src="@drawable/official_logo"
+            android:layout_gravity="center"
             />
+
 
     </LinearLayout>
 
@@ -58,8 +61,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="30dp">
+            android:orientation="vertical"
+            android:layout_marginBottom="60dp">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/imgleader1"
@@ -69,6 +77,7 @@
             android:src="@drawable/vksharmaa"
             android:tag="image_tag"
              />
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -95,30 +104,43 @@
                 android:fontFamily="sans-serif"
                 android:text="@string/leader1design"
                 android:textColor="@color/colorBack"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
+                android:layout_marginTop="10dp"
                  />
 
-        <TextView
-            android:id="@+id/descleader1"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:text="@string/descleader1"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            android:textStyle="normal"
-             />
+
             </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/descleader1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/descleader1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                />
 
         </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:orientation="vertical"
                 >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/imgleader2"
@@ -128,10 +150,10 @@
             android:src="@drawable/mpkaushik"
              />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/nameleader2"
@@ -151,22 +173,28 @@
                         android:fontFamily="sans-serif"
                         android:text="@string/leader2design"
                         android:textColor="@color/colorBack"
-                        android:textSize="20sp"
+                        android:textSize="18sp"
                         android:textStyle="bold"
+                        android:layout_marginTop="10dp"
                         />
 
-        <TextView
-            android:id="@+id/descleader2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:text="@string/descleader2"
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            android:textStyle="normal"
-            />
+                </LinearLayout>
 
                 </LinearLayout>
+
+                <TextView
+                    android:id="@+id/descleader2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/descleader2"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+
+                    />
             </LinearLayout>
     </LinearLayout>
     </ScrollView>

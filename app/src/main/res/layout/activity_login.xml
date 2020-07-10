@@ -22,20 +22,20 @@
         android:layout_height="wrap_content"
         android:background="@drawable/bd_card"
         android:orientation="vertical"
-        android:padding="60dp"
+        android:padding="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-                <TextView
+            <TextView
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@string/welcome_to_amiverse"
-                    android:textSize="28sp"
+                    android:textSize="24sp"
                     android:textStyle="bold"
-                    android:textColor="#0F0F0F"
+                    android:textColor="@android:color/black"
 
                     />
 
@@ -53,7 +53,8 @@
                 android:hint="@string/email"
                 android:ems="10"
                 android:autofillHints="@string/email"
-                android:inputType="text"/>
+                android:inputType="text"
+                android:maxLength="12"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -71,7 +72,8 @@
                 android:ems="10"
                 android:hint="@string/password"
                 android:autofillHints="@string/password"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:maxLength="12"/>
 
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -86,6 +88,7 @@
                 android:onClick="Login"
                 android:background="@drawable/bg_btn"
                 android:text="@string/login"
+                android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp" />
 

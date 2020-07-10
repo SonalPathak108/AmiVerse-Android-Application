@@ -6,14 +6,15 @@
     <string name="amiverse">AmiVerse</string>
     <string name="login">Log in</string>
     <string name="admin_login">Admin Login</string>
-    <string name="register_message">New User?</string>>
+    <string name="register_message">New User?</string>
+    <string name="welcome">Welcome to AmiVerse</string>
 
     <string name="quick_link">Quick Links</string>
     <string name="amity_web"><a href="https://www.amity.edu/">Amity University Website</a></string>
     <string name="placement"><a href="https://www.amity.edu/placement/placement-record.asp">Amity University Placements</a></string>
     <string name="dist_learn"><a href="http://addoe.amity.edu/">Amity Distance Learnings Programmes</a></string>
     <string name="prog_web"><a href="https://www.amity.edu/programe-list.aspx?fd=all">Amity University Courses</a></string>
-    <string name="tour">Take a virtual campus tour!</string>
+    <string name="tour">Take online campus tour!</string>
     <string name="carrier"><a href="http://alumni.amity.edu/jobs.aspx">Careers in Amity University</a></string>
 
     <string name="admis"><a href="https://www.amity.edu/admission-procedure-domestic.aspx">Amity University Admission Procedure</a></string>

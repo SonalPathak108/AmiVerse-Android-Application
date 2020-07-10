@@ -10,23 +10,23 @@
         tools:context=".gallery"
         >
 
-        <LinearLayout
-            android:id="@+id/linearLayout3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
-            android:layout_marginBottom="70dp">
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center">
 
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/app_name"
-                app:srcCompat="@drawable/menu"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="87dp" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/menu" />
 
             <TextView
                 android:id="@+id/club_aump"
@@ -37,19 +37,20 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:contentDescription="@string/amity_logo"
-                android:src="@drawable/official_logo"
-                />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/amity_logo"
+            android:src="@drawable/official_logo"
+            android:layout_gravity="center"
+            />
 
         </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="edmt.dev.androidgridlayout.MainActivity">
+        tools:context=".gallery">
 
         <LinearLayout
             android:orientation="vertical"
@@ -82,7 +83,6 @@
                     android:layout_marginRight="16dp"
                     android:layout_marginBottom="16dp"
                     app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp"
                     tools:targetApi="lollipop">
 
                     <LinearLayout
@@ -123,7 +123,6 @@
                     android:layout_marginRight="16dp"
                     android:layout_marginBottom="16dp"
                     app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp"
                     tools:targetApi="lollipop">
 
                     <LinearLayout
@@ -167,7 +166,6 @@
                     android:layout_marginRight="16dp"
                     android:layout_marginBottom="16dp"
                     app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp"
                     tools:targetApi="lollipop">
 
                     <LinearLayout
@@ -209,7 +207,6 @@
                     android:layout_marginRight="16dp"
                     android:layout_marginBottom="16dp"
                     app:cardCornerRadius="8dp"
-                    app:cardElevation="8dp"
                     tools:targetApi="lollipop">
 
                     <LinearLayout
