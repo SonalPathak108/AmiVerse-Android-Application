@@ -167,7 +167,7 @@
         android:layout_marginLeft="35dp"
         android:layout_marginTop="400dp"
         android:layout_marginRight="35dp"
-        android:background="@color/yellow"
+        android:background="@drawable/bg_btn"
         android:text="@string/submit"
         android:textSize="20sp" />
 

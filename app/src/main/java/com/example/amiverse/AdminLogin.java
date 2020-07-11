@@ -25,10 +25,12 @@ public class AdminLogin extends AppCompatActivity {
 
     String str_email,str_password;
     String url = "http://ep4.virtualmist.com/amiverse/admin_login.php";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_login);
+
         ed_email = findViewById(R.id.ed_name);
         ed_password = findViewById(R.id.ed_password);
     }
@@ -64,7 +66,7 @@ public class AdminLogin extends AppCompatActivity {
                         user.setName(str_email);
                         ed_email.setText("");
                         ed_password.setText("");
-                        startActivity(new Intent(getApplicationContext(),Adminscoreboard.class));
+                        startActivity(new Intent(getApplicationContext(),AdminHome.class));
                         Toast.makeText(AdminLogin.this, response, Toast.LENGTH_SHORT).show();
                     }
                     else{

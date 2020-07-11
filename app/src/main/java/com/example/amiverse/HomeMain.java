@@ -22,7 +22,7 @@ import androidx.cardview.widget.CardView;
 public class HomeMain extends AppCompatActivity {
 
     GridLayout mainGrid;
-    ImageView quicklink,events,eforms,aumpclub,gallery,leadership,menu,scorecard,scorecardadmin;
+    ImageView quicklink,events,eforms,aumpclub,gallery,menu,scorecard;
     Button tour;
 
     @Override
@@ -36,9 +36,7 @@ public class HomeMain extends AppCompatActivity {
         eforms = (ImageView) findViewById(R.id.h_eforms);
         aumpclub = (ImageView) findViewById(R.id.h_clubs);
         gallery = (ImageView) findViewById(R.id.h_gallery);
-        leadership = (ImageView) findViewById(R.id.h_contact_hierarchy);
         scorecard =(ImageView) findViewById(R.id.h_scorecard);
-        scorecardadmin =(ImageView) findViewById(R.id.h_admin_score);
         tour = findViewById(R.id.campustour);
         menu= findViewById(R.id.imageView2);
 
@@ -92,27 +90,11 @@ public class HomeMain extends AppCompatActivity {
                }
            });
 
-        leadership.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent leader_ship= new Intent(v.getContext(),Leadership_Activity.class);
-                startActivity(leader_ship);
-            }
-        });
-
         scorecard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent scorecard= new Intent(v.getContext(),scoreCard.class);
                 startActivity(scorecard);
-            }
-        });
-
-        scorecardadmin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent admin_score= new Intent(v.getContext(),Adminscoreboard.class);
-                startActivity(admin_score);
             }
         });
 

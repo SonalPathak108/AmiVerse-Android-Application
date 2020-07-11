@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">AmiVerse</string>
-
     <string name="amity_logo">Amity</string>
     <string name="home">Home</string>
     <string name="amiverse">AmiVerse</string>
@@ -8,7 +7,7 @@
     <string name="admin_login">Admin Login</string>
     <string name="register_message">New User?</string>
     <string name="welcome">Welcome to AmiVerse</string>
-
+    <string name="photo">Photo Upload</string>
     <string name="quick_link">Quick Links</string>
     <string name="amity_web"><a href="https://www.amity.edu/">Amity University Website</a></string>
     <string name="placement"><a href="https://www.amity.edu/placement/placement-record.asp">Amity University Placements</a></string>
@@ -67,8 +66,8 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-    <string name="scoreboard">Sangathan Scoreboard</string>
-
+    <string name="scoreboard">Scoreboard</string>
+    <string name="admin_message">Are you admin? Login here</string>
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
@@ -125,6 +124,4 @@
         <item>ASP</item>
         <item>ASFD</item>
     </string-array>
-
-
 </resources>

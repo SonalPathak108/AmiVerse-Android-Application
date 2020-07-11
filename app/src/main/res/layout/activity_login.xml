@@ -54,7 +54,7 @@
                 android:ems="10"
                 android:autofillHints="@string/email"
                 android:inputType="text"
-                android:maxLength="12"/>
+                />
 
             </com.google.android.material.textfield.TextInputLayout>
 

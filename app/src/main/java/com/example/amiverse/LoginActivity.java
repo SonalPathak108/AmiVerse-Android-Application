@@ -21,7 +21,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LoginActivity extends AppCompatActivity {
-
     EditText ed_email,ed_password;
 
     String str_email,str_password;
@@ -36,7 +35,8 @@ public class LoginActivity extends AppCompatActivity {
         ed_password = findViewById(R.id.ed_password);
     }
 
-    public void Login(View view) {
+    public void Login(View view)
+    {
 
         if(ed_email.getText().toString().equals("")){
             Toast.makeText(this, "Enter Email", Toast.LENGTH_SHORT).show();

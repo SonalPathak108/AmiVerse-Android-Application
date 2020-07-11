@@ -49,7 +49,7 @@
     </LinearLayout>
 
     <GridLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:columnCount="2"
         android:padding="14dp"
@@ -62,7 +62,6 @@
             android:layout_marginRight="30dp"
             android:layout_marginLeft="30dp"
             android:layout_marginBottom="30dp"
-
             >
 
             <LinearLayout
@@ -225,7 +224,7 @@
                     android:layout_height="80dp"
                     android:layout_gravity="center_horizontal"
                     android:contentDescription="@string/gallery"
-                    android:src="@drawable/photogallery" />
+                    android:src="@drawable/photography" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -239,42 +238,6 @@
 
         </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            app:cardCornerRadius="20dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginBottom="30dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_margin="16dp"
-                android:orientation="vertical"
-                tools:ignore="UseCompoundDrawables">
-
-                <ImageView
-                    android:id="@+id/h_contact_hierarchy"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_gravity="center_horizontal"
-                    android:contentDescription="@string/gallery"
-                    android:src="@drawable/h_contact_hierarchy" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/leadership"
-                    android:textColor="@android:color/black"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-
-        </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="130dp"
@@ -298,7 +261,7 @@
                     android:layout_height="80dp"
                     android:layout_gravity="center_horizontal"
                     android:contentDescription="@string/Scorecard"
-                    android:src="@drawable/gold" />
+                    app:srcCompat="@drawable/score"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -312,43 +275,6 @@
 
         </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            app:cardCornerRadius="20dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginBottom="30dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_margin="16dp"
-                android:orientation="vertical"
-                tools:ignore="UseCompoundDrawables">
-
-                <ImageView
-                    android:id="@+id/h_admin_score"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_gravity="center_horizontal"
-                    android:contentDescription="@string/admin"
-                    android:src="@drawable/silver" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/admin"
-                    android:textColor="@android:color/black"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-
-
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
 
     </GridLayout>
 

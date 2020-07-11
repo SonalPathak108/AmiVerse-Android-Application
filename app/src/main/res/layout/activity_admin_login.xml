@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
+    tools:context=".AdminLogin"
     >
 
     <LinearLayout
@@ -54,7 +54,6 @@
                 android:hint="@string/email"
                 android:ems="10"
                 android:autofillHints="@string/email"
-                android:maxLength="12"
                  />
 
         </com.google.android.material.textfield.TextInputLayout>

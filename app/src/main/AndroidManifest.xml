@@ -30,8 +30,11 @@
         <activity android:name=".Leadership_Activity" />
         <activity android:name=".Adminscoreboard" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".SplashMain">
+        <activity android:name=".AdminHome"/>
+        <activity android:name=".UploadImage"/>
+        <activity android:name=".GuestHome"/>
 
+        <activity android:name=".SplashMain">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
