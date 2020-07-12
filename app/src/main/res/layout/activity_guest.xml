@@ -19,7 +19,7 @@
             android:layout_height="match_parent"
             android:fitsSystemWindows="true"
             android:minHeight="?attr/actionBarSize"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="50dp"
             android:layout_marginTop="10dp"
 
 
@@ -45,7 +45,7 @@
                     android:id="@+id/club_aump"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/amiverse"
+                    android:text="@string/amihome"
                     android:textColor="@color/navyblue"
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -142,7 +142,7 @@
                         android:layout_height="80dp"
                         android:layout_gravity="center_horizontal"
                         android:contentDescription="@string/gallery"
-                        android:src="@drawable/h_contact_hierarchy" />
+                        app:srcCompat="@drawable/speech" />
 
                     <TextView
                         android:layout_width="wrap_content"

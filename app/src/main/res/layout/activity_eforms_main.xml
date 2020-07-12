@@ -4,123 +4,79 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_gravity="center"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".eFormsMain">
 
-    <LinearLayout
-        android:id="@+id/linearLayout3"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="30dp"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_marginBottom="50dp"
         android:layout_marginTop="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:gravity="center">
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="40dp"
-            android:layout_height="30dp"
-            android:contentDescription="@string/app_name"
-            app:srcCompat="@drawable/menu" />
-
-        <TextView
-            android:id="@+id/club_aump"
-            android:layout_width="240dp"
-            android:layout_height="wrap_content"
-            android:text="@string/e_forms"
-            android:textColor="@color/navyblue"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:contentDescription="@string/amity_logo"
-            android:src="@drawable/official_logo"
-            android:layout_gravity="center"
-            />
-
-    </LinearLayout>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/form1"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        app:cardElevation="20dp"
-        app:cardCornerRadius="10dp"
-        android:layout_marginBottom="30dp"
         >
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_gravity="center">
+            >
 
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:text="@string/date"
-                android:textColor="#000000"
-                android:background="@drawable/calendar"
-                android:textSize="14sp"
-                android:layout_gravity="center"
-                android:gravity="center" />
-
-        <LinearLayout
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
+            <ImageView
+                android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/coding_competition"
-                android:textColor="#000000"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/menu"
+                />
+
+            <TextView
+                android:id="@+id/club_aump"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/e_forms"
+                android:textColor="@color/navyblue"
                 android:textSize="20sp"
-                />
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="10dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/organiser_mr_dinesh_sharma"
-                android:textSize="16sp"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/dept"
-                android:textSize="16sp"
-                />
-
-            <Button
-                android:id="@+id/oval1"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/oval"
-                android:text="@string/register_button"
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:gravity="center"
                 android:layout_gravity="center"
-                android:textColor="#ffffff"/>
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:contentDescription="@string/amity_logo"
+                android:src="@drawable/official_logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        </LinearLayout>
-        </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
+    </androidx.appcompat.widget.Toolbar>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/form2"
-        android:layout_width="fill_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         app:cardElevation="20dp"
         app:cardCornerRadius="10dp"
         android:layout_marginBottom="30dp"
+        android:layout_marginTop="50dp"
+
         >
 
         <LinearLayout
@@ -169,9 +125,9 @@
 
                 <Button
                     android:id="@+id/oval2"
-                    android:layout_width="202dp"
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/oval"
+                    android:background="@drawable/bg_btn"
                     android:text="@string/register_button"
                     android:textColor="#ffffff">
 
@@ -180,6 +136,78 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/form1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="@string/date"
+                android:textColor="#000000"
+                android:background="@drawable/calendar"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/coding_competition"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/organiser_mr_dinesh_sharma"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dept"
+                android:textSize="16sp"
+                />
+
+            <Button
+                android:id="@+id/oval1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn"
+                android:text="@string/register_button"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
 
 
 

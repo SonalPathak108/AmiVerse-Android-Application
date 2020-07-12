@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/bd_card"
         android:orientation="vertical"
-        android:padding="110dp"
+        android:padding="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/admin_login"
-            android:textSize="28sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="#0F0F0F"
 
@@ -54,7 +54,8 @@
                 android:hint="@string/email"
                 android:ems="10"
                 android:autofillHints="@string/email"
-                 />
+                android:inputType="text"
+                />
 
         </com.google.android.material.textfield.TextInputLayout>
 

@@ -19,7 +19,7 @@
             android:layout_height="match_parent"
             android:fitsSystemWindows="true"
             android:minHeight="?attr/actionBarSize"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="50dp"
             android:layout_marginTop="10dp"
 
 
@@ -78,8 +78,6 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:columnCount="2"
-            android:padding="14dp"
-            android:gravity="center"
             >
 
             <androidx.cardview.widget.CardView
