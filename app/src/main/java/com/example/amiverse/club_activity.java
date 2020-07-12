@@ -51,7 +51,7 @@ public class club_activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Uri uri = Uri.parse("https://acc.amityaump.com/register/");
+                Uri uri = Uri.parse("https://accmp.co.in/");
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
             }
