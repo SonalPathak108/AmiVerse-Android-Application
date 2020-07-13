@@ -1,52 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_homeMain"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeMain"
     >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="30dp"
-        android:layout_marginTop="10dp"
-        android:gravity="center">
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="40dp"
-            android:layout_height="30dp"
-            android:contentDescription="@string/app_name"
-            app:srcCompat="@drawable/menu" />
-
-        <TextView
-            android:id="@+id/club_aump"
-            android:layout_width="240dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/amihome"
-            android:textColor="@color/navyblue"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:orientation="vertical"
+            >
 
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:contentDescription="@string/amity_logo"
-            android:src="@drawable/official_logo"
-            android:layout_gravity="center"
-            />
 
-    </LinearLayout>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:minHeight="?attr/actionBarSize"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <TextView
+                        android:id="@+id/club_aump"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/amihome"
+                        android:textColor="@color/navyblue"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginStart="10dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:contentDescription="@string/amity_logo"
+                        android:src="@drawable/official_logo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </LinearLayout>
 
     <GridLayout
         android:layout_width="wrap_content"
@@ -292,7 +321,16 @@
 
     </LinearLayout>
 
-</ScrollView>
+    </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/menu_main" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
 
 
 

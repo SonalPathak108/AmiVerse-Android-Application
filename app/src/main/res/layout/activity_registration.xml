@@ -16,13 +16,13 @@
         android:layout_width="150dp"
         android:layout_height="150dp"/>
 
-        <LinearLayout
+    <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/bd_card"
         android:orientation="vertical"
-        android:padding="60dp"
+        android:padding="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
