@@ -54,5 +54,9 @@ public class SplashMain extends AppCompatActivity {
 
     }
 
-
+    @Override
+    protected void onStop() {
+        finish();
+        super.onStop();
+    }
 }

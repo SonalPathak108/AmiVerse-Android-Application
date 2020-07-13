@@ -108,4 +108,10 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(),RegistrationActivity.class));
         finish();
     }
+
+    @Override
+    protected void onStop() {
+        finish();
+        super.onStop();
+    }
 }

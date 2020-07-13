@@ -103,4 +103,9 @@ public class RegistrationActivity extends AppCompatActivity {
         }
 
     }
+    @Override
+    protected void onStop() {
+        finish();
+        super.onStop();
+    }
 }

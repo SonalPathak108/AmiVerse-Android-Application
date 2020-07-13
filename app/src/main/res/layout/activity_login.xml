@@ -16,7 +16,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"/>
 
-        <LinearLayout
+    <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,22 +27,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-            <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/welcome_to_amiverse"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/black"
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/welcome_to_amiverse"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
 
-                    />
+            />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
 
             <EditText
                 android:id="@+id/ed_name"
@@ -56,12 +56,12 @@
                 android:inputType="text"
                 />
 
-            </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
 
             <EditText
                 android:id="@+id/ed_password"
@@ -76,51 +76,51 @@
                 android:maxLength="12"/>
 
 
-            </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
 
 
-            <Button
-                android:id="@+id/btn_login"
-                android:layout_width="match_parent"
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:onClick="Login"
+            android:background="@drawable/bg_btn"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="28dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:onClick="Login"
-                android:background="@drawable/bg_btn"
-                android:text="@string/login"
-                android:textAllCaps="false"
-                android:textColor="#FFFFFF"
+                android:text="@string/register_message"
+                android:textColor="#363636"
                 android:textSize="16sp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/txtsignup"
+                android:clickable="true"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="14dp"
-                android:layout_marginBottom="28dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/register_message"
-                    android:textColor="#363636"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/txtsignup"
-                    android:clickable="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/register_button"
-                    android:textColor="#FF6B00"
-                    android:onClick="moveToRegistration"
-                    android:textSize="16sp"
-                    android:focusable="true" />
+                android:text="@string/register_button"
+                android:textColor="#FF6B00"
+                android:onClick="moveToRegistration"
+                android:textSize="16sp"
+                android:focusable="true" />
 
 
 
         </LinearLayout>
 
-        </LinearLayout>
+    </LinearLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

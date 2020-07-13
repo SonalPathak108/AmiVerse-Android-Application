@@ -68,7 +68,7 @@ public class ShowImages extends AppCompatActivity {
                                     String id = object.getString("id");
                                     String imageurl = object.getString("image");
 
-                                    String url = "https://ep4.virtualmist.com/amiverse/Images/"+imageurl;
+                                    String url = "https://ep4.virtualmist.com/amiverse/Images"+imageurl;
 
                                     modelImage = new ModelImage(id,url);
                                     imageList.add(modelImage);
@@ -101,5 +101,10 @@ public class ShowImages extends AppCompatActivity {
         requestQueue.add(request);
 
 
+    }
+    @Override
+    protected void onStop() {
+        finish();
+        super.onStop();
     }
 }

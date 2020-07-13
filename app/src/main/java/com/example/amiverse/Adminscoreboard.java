@@ -1,8 +1,9 @@
 package com.example.amiverse;
 
-import android.app.DownloadManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -11,7 +12,12 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -20,6 +26,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.android.material.navigation.NavigationView;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -27,8 +34,13 @@ import java.util.Map;
 public class Adminscoreboard extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
 
+    NavigationView nav;
+    ActionBarDrawerToggle toggle;
+    DrawerLayout drawerLayout;
+
+
     EditText score, bronzeMedal, silverMedal, goldMedal;
-     String Departement;
+    String Departement;
     Button submit;
 
     @Override
@@ -68,8 +80,8 @@ public class Adminscoreboard extends AppCompatActivity implements AdapterView.On
                         silverMedal.setText("");
                         goldMedal.setText("");
 
-                        Log.d("asd",response);
-                        Toast.makeText(Adminscoreboard.this,response,Toast.LENGTH_SHORT).show();
+                        Log.d("asd", response);
+                        Toast.makeText(Adminscoreboard.this, response, Toast.LENGTH_SHORT).show();
                     }
                 },
                         new Response.ErrorListener() {
@@ -100,15 +112,55 @@ public class Adminscoreboard extends AppCompatActivity implements AdapterView.On
 
         });
 
+
+
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        nav = (NavigationView) findViewById(R.id.nav_view);
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_admin_scoreC);
+
+        toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.app_name, R.string.app_name);
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+
+
+        nav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                switch (item.getItemId()) {
+                    case R.id.m_Adminhome:
+                        Intent i1 = new Intent(getApplicationContext(), AdminHome.class);
+                        startActivity(i1);
+                        break;
+
+                }
+                drawerLayout.closeDrawer(GravityCompat.START);
+                return true;
+            }
+        });
+
+
+
+
     }
+
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-         Departement = parent.getItemAtPosition(position).toString();
+        Departement = parent.getItemAtPosition(position).toString();
 
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
+    }
+
+    @Override
+    protected void onStop() {
+        finish();
+        super.onStop();
     }
 }

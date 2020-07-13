@@ -1,20 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_upload"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".UploadImage">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+    <LinearLayout
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
         android:fitsSystemWindows="true"
         android:minHeight="?attr/actionBarSize"
         android:layout_marginBottom="50dp"
+        android:layout_height="match_parent"
         android:layout_marginTop="10dp"
+
 
 
         >
@@ -24,6 +42,12 @@
             android:layout_height="match_parent"
             >
 
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
@@ -49,6 +73,23 @@
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginStart="10dp" />
 
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:contentDescription="@string/amity_logo"
+                android:src="@drawable/official_logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="60dp"
@@ -103,4 +144,14 @@
         android:onClick="btnShowImages"
         android:layout_marginTop="10dp"
         />
-</LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/admin_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,7 +1,12 @@
 package com.example.amiverse;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.Manifest;
 import android.app.Activity;
@@ -11,6 +16,7 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Base64;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -23,6 +29,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.android.material.navigation.NavigationView;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.PermissionToken;
 import com.karumi.dexter.listener.PermissionDeniedResponse;
@@ -37,6 +44,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class UploadImage extends AppCompatActivity {
+
+
+    NavigationView nav;
+    ActionBarDrawerToggle toggle;
+    DrawerLayout drawerLayout;
 
     Button btnSelectImage,btnUploadImage;
     ImageView imageView;
@@ -113,6 +125,38 @@ public class UploadImage extends AppCompatActivity {
 
             }
         });
+
+
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        nav = (NavigationView) findViewById(R.id.nav_view);
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_upload);
+
+        toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.app_name, R.string.app_name);
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+
+
+        nav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                switch (item.getItemId()) {
+                    case R.id.m_Adminhome:
+                        Intent i1 = new Intent(getApplicationContext(), AdminHome.class);
+                        startActivity(i1);
+                        break;
+
+                }
+                drawerLayout.closeDrawer(GravityCompat.START);
+                return true;
+            }
+        });
+
+
+
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -154,5 +198,11 @@ public class UploadImage extends AppCompatActivity {
 
     public void btnShowImages(View view) {
         startActivity(new Intent(getApplicationContext(),ShowImages.class));
+    }
+
+    @Override
+    protected void onStop() {
+        finish();
+        super.onStop();
     }
 }

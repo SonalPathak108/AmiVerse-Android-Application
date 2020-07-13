@@ -16,16 +16,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".outpass"/>
+        <activity android:name=".GuestLeadership"></activity>
+        <activity android:name=".GuestQuickLinks" />
+        <activity android:name=".outpass" />
         <activity android:name=".hostelComplaint" />
         <activity android:name=".NoticeBoard" />
         <activity android:name=".AdminLogin" />
         <activity android:name=".hostelMain" />
         <activity android:name=".scoreCard" />
-        <activity android:name=".MenuActivity" />
         <activity android:name=".gallery" />
         <activity android:name=".club_activity" />
-        <activity android:name=".eFormsMain" />
+        <activity android:name=".AdminHome" />
         <activity android:name=".Upcoming_events" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegistrationActivity" />
@@ -34,12 +35,10 @@
         <activity android:name=".Leadership_Activity" />
         <activity android:name=".Adminscoreboard" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".AdminHome"/>
-        <activity android:name=".UploadImage"/>
-        <activity android:name=".GuestHome"/>
-
+        <activity android:name=".eFormsMain" />
+        <activity android:name=".UploadImage" />
+        <activity android:name=".GuestHome" />
         <activity android:name=".SplashMain">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
