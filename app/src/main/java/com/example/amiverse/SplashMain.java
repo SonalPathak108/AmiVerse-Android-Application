@@ -32,7 +32,8 @@ public class SplashMain extends AppCompatActivity {
                         if((user.getName()!=""))
                         {
                             sleep(3000);
-                            Intent i = new Intent(SplashMain.this, MainActivity.class);
+                            Intent i = new Intent(SplashMain.this, HomeMain.class);
+                            i.putExtra("name",user.getName());
                             startActivity(i);
                         }
                        else
