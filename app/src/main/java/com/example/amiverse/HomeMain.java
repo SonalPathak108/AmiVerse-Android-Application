@@ -109,6 +109,13 @@ public class HomeMain extends AppCompatActivity {
             }
         });
     }
+    public void logOut(View view)
+    {
+        new User(HomeMain.this).removeUser();
+        Intent intent = new Intent (HomeMain.this,MainActivity.class);
+        startActivity(intent);
+        finish();
 
+    }
 
 }

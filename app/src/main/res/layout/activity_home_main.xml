@@ -68,6 +68,19 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LogOut"
+
+                    android:textSize="20dp"
+                    tools:layout_editor_absoluteX="197dp"
+                    tools:layout_editor_absoluteY="18dp"
+                    android:id="@+id/log"
+                    android:onClick="logOut"
+                    />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 

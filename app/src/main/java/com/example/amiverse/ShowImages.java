@@ -49,7 +49,7 @@ public class ShowImages extends AppCompatActivity {
 
     public void fetchImages(){
 
-        StringRequest request = new StringRequest(Request.Method.POST, "https:///fetchImages.php",
+        StringRequest request = new StringRequest(Request.Method.POST, "https://ep4.virtualmist.com/amiverse/fetchImages.php",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -68,7 +68,7 @@ public class ShowImages extends AppCompatActivity {
                                     String id = object.getString("id");
                                     String imageurl = object.getString("image");
 
-                                    String url = "https://arsltechmysql.000webhostapp.com/Images/"+imageurl;
+                                    String url = "https://ep4.virtualmist.com/amiverse/Images/"+imageurl;
 
                                     modelImage = new ModelImage(id,url);
                                     imageList.add(modelImage);
