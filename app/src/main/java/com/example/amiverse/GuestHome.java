@@ -101,10 +101,5 @@ public class GuestHome extends AppCompatActivity {
             super.onBackPressed();
         }
     }
-    @Override
-    protected void onStop() {
-        finish();
-        super.onStop();
-    }
 
 }

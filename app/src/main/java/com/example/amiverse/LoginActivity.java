@@ -109,9 +109,5 @@ public class LoginActivity extends AppCompatActivity {
         finish();
     }
 
-    @Override
-    protected void onStop() {
-        finish();
-        super.onStop();
-    }
+
 }

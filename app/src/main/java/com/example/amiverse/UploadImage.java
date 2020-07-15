@@ -115,7 +115,7 @@ public class UploadImage extends AppCompatActivity {
                     @Override
                     protected Map<String, String> getParams() throws AuthFailureError {
                         Map<String, String> params = new HashMap<>();
-                        params.put("image", encodedImage);
+                        params.put("photo", encodedImage);
                         return params;
                     }
                 };
@@ -200,9 +200,5 @@ public class UploadImage extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(),ShowImages.class));
     }
 
-    @Override
-    protected void onStop() {
-        finish();
-        super.onStop();
-    }
+
 }
