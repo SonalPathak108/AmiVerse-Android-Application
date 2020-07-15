@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -25,7 +26,7 @@ public class GuestHome extends AppCompatActivity {
     ActionBarDrawerToggle toggle;
     DrawerLayout drawerLayout;
     ImageView leader, quicklink;
-    Button tour;
+    CardView tour;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +34,7 @@ public class GuestHome extends AppCompatActivity {
 
         quicklink = (ImageView) findViewById(R.id.h_quick_link);
         leader = (ImageView) findViewById(R.id.h_contact_hierarchy);
-        tour = (Button) findViewById(R.id.campustour);
+        tour = (CardView) findViewById(R.id.tour);
 
         quicklink.setOnClickListener(new View.OnClickListener() {
             @Override

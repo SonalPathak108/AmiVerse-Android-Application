@@ -29,7 +29,7 @@ public class HomeMain extends AppCompatActivity {
 
     GridLayout mainGrid;
     ImageView quicklink,events,eforms,aumpclub,gallery,menu,scorecard;
-    Button tour;
+    CardView tour;
     NavigationView nav;
     ActionBarDrawerToggle toggle;
     DrawerLayout drawerLayout;
@@ -104,7 +104,7 @@ public class HomeMain extends AppCompatActivity {
         aumpclub = (ImageView) findViewById(R.id.h_clubs);
         gallery = (ImageView) findViewById(R.id.h_gallery);
         scorecard =(ImageView) findViewById(R.id.h_scorecard);
-        tour = findViewById(R.id.campustour);
+        tour = (CardView) findViewById(R.id.tour);
 
 
 
