@@ -65,8 +65,8 @@ public class ShowImages extends AppCompatActivity {
                                 for(int i=0;i<jsonArray.length();i++){
                                     JSONObject object = jsonArray.getJSONObject(i);
 
-                                    String id = object.getString("id");
-                                    String imageurl = object.getString("image");
+                                    String id = object.getString("photo_id");
+                                    String imageurl = object.getString("photo");
 
                                     String url = "https://ep4.virtualmist.com/amiverse/Images"+imageurl;
 
@@ -102,9 +102,5 @@ public class ShowImages extends AppCompatActivity {
 
 
     }
-    @Override
-    protected void onStop() {
-        finish();
-        super.onStop();
-    }
+
 }
