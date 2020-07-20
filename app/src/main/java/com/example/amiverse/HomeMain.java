@@ -1,46 +1,40 @@
 package com.example.amiverse;
-
-
-import android.content.Intent;
-import android.graphics.Color;
-import android.net.Uri;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.GridLayout;
-import android.widget.GridView;
-import android.widget.ImageView;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.cardview.widget.CardView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
 
+import com.example.amiverse.AmitiansFragments.Eforms;
+import com.example.amiverse.AmitiansFragments.QuickLinks;
+import com.example.amiverse.AmitiansFragments.UpcomingEvents;
+import com.example.amiverse.AmitiansFragments.clubs;
+import com.example.amiverse.AmitiansFragments.gallert;
+import com.example.amiverse.AmitiansFragments.scorecard;
 import com.google.android.material.navigation.NavigationView;
 
 public class HomeMain extends AppCompatActivity {
 
-    GridLayout mainGrid;
-    ImageView quicklink,events,eforms,aumpclub,gallery,menu,scorecard;
-    CardView tour;
+    private Fragment fragment;
+    private int checkedItem = 0;
+    private boolean navItemSelected = false;
+
     NavigationView nav;
     ActionBarDrawerToggle toggle;
+    TextView toolbarText;
     DrawerLayout drawerLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_main);
-
-
-
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbarText = (TextView) findViewById(R.id.toolbarText);
+        final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         nav = (NavigationView) findViewById(R.id.nav_view);
@@ -50,54 +44,65 @@ public class HomeMain extends AppCompatActivity {
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
+        getSupportFragmentManager().beginTransaction().replace(R.id.cont,new com.example.amiverse.AmitiansFragments.HomeMain()).commit();
 
         nav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
+                Fragment fragment;
+
                 switch (item.getItemId()) {
                     case R.id.m_home:
-                        Intent i1 = new Intent(getApplicationContext(), HomeMain.class);
-                        startActivity(i1);
+                        checkedItem = R.id.m_home;
+                        //Intent i1 = new Intent(getApplicationContext(), HomeMain.class);
+                        //startActivity(i1);
+                        toolbarText.setText("AmiHome");
+                        fragment = new com.example.amiverse.AmitiansFragments.HomeMain();
                         break;
-                    case R.id.m_quicklinks:
-                        Intent i2 = new Intent(getApplicationContext(), Quick_links.class);
-                        startActivity(i2);
+                   case R.id.m_quicklinks:
+                       toolbarText.setText("Quick Links");
+                       fragment = new QuickLinks();
                         break;
                     case R.id.m_events:
-                        Intent i3 = new Intent(getApplicationContext(), Upcoming_events.class);
-                        startActivity(i3);
+
+                        toolbarText.setText("Upcoming Events");
+                        fragment = new UpcomingEvents();
                         break;
                     case R.id.m_eforms:
-                        Intent i4 = new Intent(getApplicationContext(), eFormsMain.class);
-                        startActivity(i4);
+                       toolbarText.setText("EForms");
+                       fragment = new Eforms();
                         break;
 
-                    case R.id.m_aumpclubs:
-                        Intent i5 = new Intent(getApplicationContext(), club_activity.class);
-                        startActivity(i5);
-                        break;
+                     case R.id.m_aumpclubs:
+                        toolbarText.setText("AUMP Clubs");
+                        fragment = new clubs();
+                         break;
 
                     case R.id.m_gallery:
-                        Intent i6 = new Intent(getApplicationContext(), gallery.class);
-                        startActivity(i6);
+
+                        toolbarText.setText("Gallery");
+                        fragment = new gallert();
                         break;
 
                     case R.id.m_scoreboard:
-                        Intent i8 = new Intent(getApplicationContext(), scoreCard.class);
-                        startActivity(i8);
+                       toolbarText.setText("ScoreCard");
+                       fragment = new scorecard();
                         break;
 
-
+                    default:
+                        throw new IllegalStateException("Unexpected value: " + item.getItemId());
                 }
                 drawerLayout.closeDrawer(GravityCompat.START);
+
+                getSupportFragmentManager().beginTransaction().replace(R.id.cont,fragment).commit();
                 return true;
             }
         });
 
 
 
-        mainGrid = (GridLayout) findViewById(R.id.mainGrid);
+       /* mainGrid = (GridLayout) findViewById(R.id.mainGrid);
         quicklink = (ImageView) findViewById(R.id.h_quick_link);
         events = (ImageView) findViewById(R.id.h_events);
         eforms = (ImageView) findViewById(R.id.h_eforms);
@@ -166,6 +171,8 @@ public class HomeMain extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        */
     }
 
     @Override

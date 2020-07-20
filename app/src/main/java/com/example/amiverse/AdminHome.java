@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,37 +20,15 @@ import java.nio.InvalidMarkException;
 
 public class AdminHome extends AppCompatActivity {
 
+    private Fragment fragment;
     NavigationView nav;
     ActionBarDrawerToggle toggle;
     DrawerLayout drawerLayout;
 
-    ImageView photo, scorecard;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adminhome);
-
-        scorecard = (ImageView) findViewById(R.id.sangathan_admin);
-        photo = (ImageView) findViewById(R.id.photo_upload);
-
-        scorecard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent scorecard= new Intent(v.getContext(),Adminscoreboard.class);
-                startActivity(scorecard);
-            }
-        });
-
-        photo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent photoupload = new Intent(AdminHome.this,UploadImage.class);
-                startActivity(photoupload);
-
-            }
-        });
-
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -59,18 +38,21 @@ public class AdminHome extends AppCompatActivity {
         toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.app_name, R.string.app_name);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
-
-
+        getSupportFragmentManager().beginTransaction().replace(R.id.admincontent,new com.example.amiverse.AdminFragments.AdminHome()).commit();
         nav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
+
                 switch (item.getItemId()) {
                     case R.id.m_Adminhome:
-                        Intent i1 = new Intent(getApplicationContext(), AdminHome.class);
-                        startActivity(i1);
-                        break;
+                      fragment = new com.example.amiverse.AdminFragments.AdminHome();
+                      break;
+
+                    default:
+                        throw new IllegalStateException("Unexpected value: " + item.getItemId());
                 }
+                getSupportFragmentManager().beginTransaction().replace(R.id.admincontent,fragment).commit();
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
             }
