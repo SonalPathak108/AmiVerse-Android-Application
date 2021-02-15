@@ -23,7 +23,7 @@ public class HomeMain extends AppCompatActivity {
 
     private Fragment fragment;
     private int checkedItem = 0;
-    private boolean navItemSelected = false;
+    private final boolean navItemSelected = false;
 
     NavigationView nav;
     ActionBarDrawerToggle toggle;

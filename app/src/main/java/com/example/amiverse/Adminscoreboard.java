@@ -88,7 +88,7 @@ public class Adminscoreboard extends AppCompatActivity implements AdapterView.On
                             @Override
                             public void onErrorResponse(VolleyError error) {
 
-                                Toast.makeText(Adminscoreboard.this, error.getMessage().toString(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Adminscoreboard.this, error.getMessage(), Toast.LENGTH_SHORT).show();
                             }
                         }
                 ) {

@@ -79,7 +79,7 @@ public class AdminLogin extends AppCompatActivity {
                 @Override
                 public void onErrorResponse(VolleyError error) {
                     progressDialog.dismiss();
-                    Toast.makeText(AdminLogin.this, error.getMessage().toString(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AdminLogin.this, error.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
 

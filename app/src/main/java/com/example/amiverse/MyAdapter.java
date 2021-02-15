@@ -15,8 +15,8 @@ import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<ImageViewHOlder> {
 
-    private Context context;
-    private List<ModelImage> imageList;
+    private final Context context;
+    private final List<ModelImage> imageList;
 
     public MyAdapter(Context context, List<ModelImage> imageList) {
         this.context = context;

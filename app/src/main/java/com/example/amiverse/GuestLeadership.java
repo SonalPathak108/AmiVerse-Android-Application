@@ -14,6 +14,7 @@ import android.text.method.LinkMovementMethod;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.example.amiverse.GuestFragments.GuestHome;
 import com.example.amiverse.R;
 import com.google.android.material.navigation.NavigationView;
 
